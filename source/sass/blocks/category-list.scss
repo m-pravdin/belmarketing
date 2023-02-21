@@ -1,0 +1,16 @@
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  padding: 0;
+}
+
+.category-list__item {
+  height: 28px;
+  border-bottom: 1px solid $link-orange-color;
+}
+
+.category-list__link {
+  color: $white-color;
+  text-decoration: none;
+}

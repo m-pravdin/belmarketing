@@ -4,14 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./fonts/GothamPro-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/GothamPro.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/GothamPro-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <title>Belmarketing</title>
 </head>
 <body class="page__body">
-  
+
   <!-- Header -->
   <header class="header">
-    <nav class="nav">      
+    <nav class="nav nav--closed">      
       <div class="nav__button toggle">
         <button class="toggle__button">
           <span class="visually-hidden">Открыть меню</span>
@@ -42,8 +45,9 @@
             <a href="#" class="menu-list__link">Контакты</a>
           </li>
         </ul>
-        <a href="tel:88001234567" class="menu__phone">8 800 123 45 67</a>
+        <a href="tel:88001234567" class="menu-list__phone">8 800 123 45 67</a>
       </div>
+      <a href="tel:88001234567" class="nav__phone">8 800 123 45 67</a>
     </nav>
   </header>
   
@@ -51,11 +55,13 @@
   <main class="main">
     <section class="intro">
       <div class="intro__social social"></div>
-      <div class="intro__logo-wrapper"></div>    
+      <div class="intro__logo-wrapper">
+        <img class="intro__logo" src="./img/logo-intro.svg" width="283" height="496" alt="Логотип - Belmarketing в Intro.">
+      </div>    
       <div class="intro__info cta">
         <p class="cta__text">Продуманные инструменты для достижения поставленных целей</p>
-        <h1 class="cta__title">Стратегический и системный маркетинг для_ритейлеров</h1>
-        <ul class="cta_list category-list">
+        <h1 class="cta__title">Стратегический и&nbsp;системный маркетинг для_ритейлеров</h1>
+        <ul class="cta__list category-list">
           <li class="category-list__item">
             <a href="#" class="category-list__link">Реклама</a>
           </li>
@@ -78,7 +84,7 @@
             <a href="#" class="category-list__link">SMM</a>
           </li>
         </ul>
-        <button class="cta__button">Решить вашу задачу?</button>
+        <button class="cta__button button">Решить вашу задачу?</button>
       </div>
     </section>
   </main>

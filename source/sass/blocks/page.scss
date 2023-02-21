@@ -1,6 +1,11 @@
 .page__body {
   display: flex;
+  flex-direction: column;
+  margin: 0;
   width: 100%;
   font-family: $font-main;
   color: $dark-color;
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 400;
 }
