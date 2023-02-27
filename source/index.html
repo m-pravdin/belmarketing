@@ -14,90 +14,766 @@
 
   <!-- Header -->
   <header class="header">
-    <nav class="nav nav--closed">      
-      <div class="nav__button toggle">
-        <button class="toggle__button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <p class="toggle__text">Menu</p>
-      </div>
-      <div class="nav__menu menu">
-        <a href="#" class="menu__logo logo">
-          <img src="./img/logo-mobile.png" width="320" height="57" alt="Логотип - Belmarketing." class="logo__image">
-        </a>
-        <ul class="menu__list menu-list">
-          <li class="menu-list__item">
-            <a href="#" class="menu-list__link">Медиапланирование и аудирование</a>
-          </li>
-          <li class="menu-list__item">
-            <a href="#" class="menu-list__link">Маркетинг / Инструменты</a>
-          </li>
-          <li class="menu-list__item">
-            <a href="#" class="menu-list__link">Продакшн / Производство</a>
-          </li>
-          <li class="menu-list__item">
-            <a href="#" class="menu-list__link">Кейсы</a>
-          </li>
-          <li class="menu-list__item">
-            <a href="#" class="menu-list__link">Отзывы</a>
-          </li>
-          <li class="menu-list__item">
-            <a href="#" class="menu-list__link">Контакты</a>
-          </li>
-        </ul>
-        <a class="menu-list__phone" href="tel:88001234567">
+    <div class="container">
+      <nav class="nav nav--closed">      
+        <div class="nav__button toggle">
+          <button class="toggle__button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <p class="toggle__text">Menu</p>
+        </div>
+        <div class="nav__menu menu">
+          <a href="#" class="menu__logo logo">
+            <img src="./img/logo-mobile.png" width="320" height="57" alt="Логотип - Belmarketing." class="logo__image">
+          </a>
+          <ul class="menu__list menu-list">
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Медиапланирование и аудирование</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Маркетинг / Инструменты</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Продакшн / Производство</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Кейсы</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Отзывы</a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#" class="menu-list__link">Контакты</a>
+            </li>
+          </ul>
+          <a class="menu-list__phone" href="tel:88001234567">
+              <svg class="social__image" width="18" height="18">
+              <use xlink:href="./img/sprite.svg#phone-black"></use>
+              </svg> 
+            &nbsp;- 8 800 123 45 67
+          </a>
+        </div>
+        <div class="tooltip-wrapper tooltip-wrapper--closed">
+          <a href="tel:88001234567" class="nav__phone">
             <svg class="social__image" width="18" height="18">
-            <use xlink:href="./img/sprite.svg#phone-black"></use>
-            </svg> 
-          &nbsp;- 8 800 123 45 67
-        </a>
-      </div>
-      <a href="tel:88001234567" class="nav__phone">
-        <svg class="social__image" width="18" height="18">
-          <use xlink:href="./img/sprite.svg#phone-white"></use>
-          </svg>
-          &nbsp;8 800 123 45 67
-      </a>
-    </nav>
+              <use xlink:href="./img/sprite.svg#phone-white"></use>
+              </svg>
+              &nbsp;8 800 123 45 67
+          </a>
+          <button class="tooltip-toggle"></button>
+          <div class="tooltip">
+            <p class="tooltip__text">Мы работаем по будням с 9:00 до 19:00</p>
+            <p class="tooltip__text tooltip__text--phone">
+              <a href="#" class="tooltip__link">
+                <svg class="social__image" width="20" height="20">
+                  <use xlink:href="./img/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+              <a href="#" class="tooltip__link">
+                <svg class="social__image" width="20" height="18">
+                  <use xlink:href="./img/sprite.svg#tg"></use>
+                </svg>
+              </a>
+              <a href="tel:88001234567" class="tooltip__link">8 800 123 45 67</a>
+            </p>
+            <a class="tooltip__link tooltip__link--email" href="mailto:Belmarket@mail.ru">
+              <svg class="social__image" width="18" height="12">
+                <use xlink:href="./img/sprite.svg#email"></use>
+              </svg>
+              Belmarket@mail.ru
+            </a>
+            <div class="tooltip__text tooltip__text--social">
+              Подписывайтесь:
+              <div class="tooltip__text tooltip__text--links">
+                <a class="tooltip__link" href="#">
+                  <svg class="social__image" width="22" height="24">
+                    <use xlink:href="./img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+                <a class="tooltip__link" href="#">
+                  <svg class="social__image" width="18" height="18">
+                    <use xlink:href="./img/sprite.svg#inst"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
   
   <!-- Main -->
   <main class="main">
+
+    <!-- Intro Section -->
     <section class="intro">
-      <div class="intro__social social"></div>
-      <div class="intro__logo-wrapper">
-        <img class="intro__logo" src="./img/logo-intro.svg" width="283" height="496" alt="Логотип - Belmarketing в Intro.">
-      </div>    
-      <div class="intro__info cta">
-        <p class="cta__text">Продуманные инструменты для достижения поставленных целей</p>
-        <h1 class="cta__title">Стратегический и&nbsp;системный маркетинг для_ритейлеров</h1>
-        <ul class="cta__list category-list">
-          <li class="category-list__item">
-            <a href="#" class="category-list__link">Реклама</a>
+      <div class="intro__container container">
+        <div class="intro__social social">
+          <span class="social__text">Follow us</span>
+          <a href="#" class="social__link">
+            <svg class="social__image" width="24" height="24">
+              <use xlink:href="./img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a href="#" class="social__link">
+            <svg class="social__image" width="18" height="18">
+              <use xlink:href="./img/sprite.svg#inst"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="intro__logo-wrapper">
+          <picture>
+          <img class="intro__logo" src="./img/logo-intro-desktop.png" width="404" height="707" alt="Логотип - Belmarketing в Intro.">
+          </picture>
+        </div>    
+        <div class="intro__info offer">
+          <p class="offer__text">Продуманные инструменты для достижения поставленных целей</p>
+          <h1 class="offer__title">Стратегический и&nbsp;системный маркетинг <span>для_ритейлеров</span></h1>
+          <ul class="offer__list category-list">
+            <li class="category-list__item">
+              <a href="#" class="category-list__link">Реклама</a>
+            </li>
+            <li class="category-list__item">
+              <a href="#" class="category-list__link">SEO</a>
+            </li>
+            <li class="category-list__item">
+              <a href="#" class="category-list__link">PR</a>
+            </li>
+            <li class="category-list__item">
+              <a href="#" class="category-list__link">SERM</a>
+            </li>
+            <li class="category-list__item">
+              <a href="#" class="category-list__link">ORM</a>
+            </li>
+            <li class="category-list__item">
+              <a href="#" class="category-list__link">Контент</a>
+            </li>
+            <li class="category-list__item">
+              <a href="#" class="category-list__link">SMM</a>
+            </li>
+          </ul>
+          <button class="offer__button button">
+            Решить вашу задачу?
+            <svg class="offer__button-img" width="88" height="32">
+              <use xlink:href="./img/sprite.svg#err"></use>
+            </svg>
+          </button>
+        </div>
+    </div>
+    </section>
+
+    <!-- About Advantages Section -->
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title">Услуги</h2>
+        <div class="about__info about-info">
+          <p class="about-info__title">Отлаженная стратегия многоканального влияния на вашу Целевую Аудиторию</p>
+          <p class="about-info__description">В зависимости от задач мы привлекаем {покупателей, аудиторию, инвесторов}</p>
+        </div>
+        <div class="about__advantages advantages">
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--clients">
+              100+
+              <span class="advantages__text">Довольных клиентов</span>
+            </li>
+            <li class="advantages__item advantages__item--projects">
+              300+
+              <span class="advantages__text">Успешных проектов</span>
+            </li>
+            <li class="advantages__item advantages__item--years">
+              15
+              <span class="advantages__text">лет на рынке</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Strategy Section -->
+    <section class="service service--strategy">
+      <div class="container">
+        <div class="service__title-wrapper">
+          <h2 class="service__title">Стратегия</h2>
+          <p class="service__description">Медиапланирование и аудирование</p>
+        </div>
+        <ul class="service__list">
+          <li class="service__item service__item--active">
+            Маркетинговый аудит и аналитика
           </li>
-          <li class="category-list__item">
-            <a href="#" class="category-list__link">SEO</a>
+          <li class="service__item">
+            Бренд-стратегия
           </li>
-          <li class="category-list__item">
-            <a href="#" class="category-list__link">PR</a>
+          <li class="service__item">
+            Контент-стратегия
           </li>
-          <li class="category-list__item">
-            <a href="#" class="category-list__link">SERM</a>
+          <li class="service__item">
+            PR-стратегия
           </li>
-          <li class="category-list__item">
-            <a href="#" class="category-list__link">ORM</a>
-          </li>
-          <li class="category-list__item">
-            <a href="#" class="category-list__link">Контент</a>
-          </li>
-          <li class="category-list__item">
-            <a href="#" class="category-list__link">SMM</a>
+          <li class="service__item">
+            Инфлюенс-стратегия
           </li>
         </ul>
-        <button class="cta__button button">Решить вашу задачу?</button>
+      </div>
+    </section>
+
+    <!-- Service Marketing Section -->
+    <section class="service service--marketing">
+      <div class="container">
+        <div class="service__title-wrapper">
+          <h2 class="service__title">Маркетинг / инструменты</h2>
+        </div>
+        <ul class="service__list">
+          <li class="service__item service__item--active">
+            PR для персон и брендов
+          </li>
+          <li class="service__item">
+            Работа с репутацией
+          </li>
+          <li class="service__item">
+            Трафиковая реклама
+          </li>
+          <li class="service__item">
+            SEO
+          </li>
+          <li class="service__item">
+            SMM
+          </li>
+          <li class="service__item">
+            Инфлюенс-маркетинг
+          </li>
+          <li class="service__item">
+            Креативные рассылки
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Service Production Section -->
+    <section class="service service--production">
+      <div class="container">
+        <div class="service__title-wrapper">
+          <h2 class="service__title">Продакшн / производство</h2>
+        </div>
+        <ul class="service__list">
+          <li class="service__item service__item--active">
+            UI / UX дизайн
+          </li>
+          <li class="service__item">
+            Многофункциональные сайты
+          </li>
+          <li class="service__item">
+            Конверсионные лендинги
+          </li>
+          <li class="service__item">
+            Контент мейкинг
+          </li>
+          <li class="service__item">
+            Фото и видео
+          </li>
+          <li class="service__item">
+            Спецпроекты
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+      <ul class="partners__row">
+        <li class="partners__item">
+          <svg class="partners__image" width="113" height="32">
+            <use xlink:href="./img/sprite.svg#yandex-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="161" height="31">
+            <use xlink:href="./img/sprite.svg#psb-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="203" height="42">
+            <use xlink:href="./img/sprite.svg#gazprombank-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="126" height="35">
+            <use xlink:href="./img/sprite.svg#sber-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="184" height="47">
+            <use xlink:href="./img/sprite.svg#rostelekom-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="184" height="50">
+            <use xlink:href="./img/sprite.svg#nornikel-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="173" height="35">
+            <use xlink:href="./img/sprite.svg#spar-logo"></use>
+          </svg>
+        </li>
+      </ul>
+      <ul class="partners__row partners__row--second">
+        <li class="partners__item">
+          <svg class="partners__image" width="113" height="32">
+            <use xlink:href="./img/sprite.svg#yandex-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="161" height="31">
+            <use xlink:href="./img/sprite.svg#psb-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="203" height="42">
+            <use xlink:href="./img/sprite.svg#gazprombank-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="126" height="35">
+            <use xlink:href="./img/sprite.svg#sber-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="184" height="47">
+            <use xlink:href="./img/sprite.svg#rostelekom-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="184" height="50">
+            <use xlink:href="./img/sprite.svg#nornikel-logo"></use>
+          </svg>
+        </li>
+        <li class="partners__item">
+          <svg class="partners__image" width="173" height="35">
+            <use xlink:href="./img/sprite.svg#spar-logo"></use>
+          </svg>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Background Animation Section -->
+    <section class="background-animation">
+      <img class="background-animation__image" src="./img/logo-animation.jpg" width="1920" height="474" alt="Анимация логотипа Belmarketing.">
+    </section>
+
+    <!-- About Cases Section -->
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title">Кейсы</h2>
+        <div class="about__info about-info">
+          <p class="about-info__title">Эффективно занимаемся маркетингом более 15 лет</p>
+          <p class="about-info__description">Команда узких специалистов. Высокий уровень компетенций. Отлаженные стратегии. Нестандартные решения Ваших задач в 5 основных сферах экономики</p>
+        </div>
+        <div class="about__cases cases">
+          <ul class="cases__list">
+            <li class="cases__item">
+              <img class="cases__image" width="225" height="221" href="./img/education-sector-icon.png" alt="Образовательный сектор.">
+              Образовательный сектор 
+              <a class="cases__link" href="#">
+                Смотреть примеры
+              <svg class="cases__link-image" width="28" height="28">
+                <use xlink:href="./img/sprite.svg#cases-link"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="cases__item">
+              <img class="cases__image" width="278" height="180" href="./img/finance-sector-icon.png" alt="Финансовый и банковский сектор.">
+              Финансовый и банковский сектор
+              <a class="cases__link" href="#">
+                Смотреть примеры
+              <svg class="cases__link-image" width="28" height="28">
+                <use xlink:href="./img/sprite.svg#cases-link"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="cases__item">
+              <img class="cases__image" width="384" height="231" href="./img/transport-logistics-icon.png" alt="Транспорт и логистика.">
+              Транспорт и логистика
+              <a class="cases__link" href="#">
+                Смотреть примеры
+              <svg class="cases__link-image" width="28" height="28">
+                <use xlink:href="./img/sprite.svg#cases-link"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="cases__item">
+              <img class="cases__image" width="292" height="300" href="./img/supply-industry-icon.png" alt="Производство и поставки.">
+              Производство и поставки
+              <a class="cases__link" href="#">
+                Смотреть примеры
+              <svg class="cases__link-image" width="28" height="28">
+                <use xlink:href="./img/sprite.svg#cases-link"></use>
+              </svg>
+              </a>
+            </li>
+            <li class="cases__item">
+              <img class="cases__image" width="217" height="234" href="./img/retail-ecommerce-icon.png" alt="Ритейл и е-коммерс.">
+              Ритейл и е-коммерс
+              <a class="cases__link" href="#">
+                Смотреть примеры
+              <svg class="cases__link-image" width="28" height="28">
+                <use xlink:href="./img/sprite.svg#cases-link"></use>
+              </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Cases Slider Section -->
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title">Кейсы</h2>
+        <div class="about__info about-info">
+          <div class="about-info__control control">
+            <button class="control__button" type="button">
+              <svg width="56" height="22">
+                <use xlink:href="./img/sprite.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <svg width="13" height="26">
+              <use xlink:href="./img/sprite.svg#separator"></use>
+            </svg>
+            <button class="control__button" type="button">
+              <svg width="56" height="22">
+                <use xlink:href="./img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+          <p class="about-info__title">LIVS</p>
+          <p class="about-info__description">Продукция LIVS™ представлена на многих рынках мира, в том числе в Европе, США, Южной Америке. В 2021 году LIVS™ начал свою работу в России и странах СНГ</p>
+          <ol class="about-info__list">
+            <li class="about-info__item">Аналитика</li>
+            <li class="about-info__item">Проектирование</li>
+            <li class="about-info__item">Дизайн</li>
+            <li class="about-info__item">Разработка</li>
+            <li class="about-info__item">Сложная интеграция</li>
+            <li class="about-info__item">Сопровождение</li>
+          </ol>
+          <div class="about-info__more more">
+            <p class="more__text">Retail, E-commerce</p>
+            <a class="more__link" href="#">
+              Смотреть отчет
+              <svg class="cases__link-image" width="19" height="24">
+                <use xlink:href="./img/sprite.svg#file"></use>
+              </svg>
+            </a>
+            <a class="more__link" href="#">
+              Смотреть отчет
+              <svg class="cases__link-image" width="28" height="28">
+                <use xlink:href="./img/sprite.svg#cases-link"></use>
+              </svg>
+            </a>
+          </div>      
+        </div>
+        <div class="about__image-slider about-slider">
+          <ul class="about-slider__list">
+            <li class="about-slider__item about-slider__item--visible">
+              <img src="#" alt="" class="about-slider__image">
+            </li>
+            <li class="about-slider__item about-slider__item--hidden">
+              <img src="#" alt="" class="about-slider__image">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="request">
+      <ul class="request__list">
+        <li class="request__item">
+          Оставить заявку
+          <svg class="cases__link-image" width="28" height="28">
+            <use xlink:href="./img/sprite.svg#arrow-request"></use>
+          </svg>
+        </li>
+        <li class="request__item">
+          Оставить заявку
+          <svg class="cases__link-image" width="28" height="28">
+            <use xlink:href="./img/sprite.svg#arrow-request"></use>
+          </svg>
+        </li>
+        <li class="request__item">
+          Оставить заявку
+          <svg class="cases__link-image" width="28" height="28">
+            <use xlink:href="./img/sprite.svg#arrow-request"></use>
+          </svg>
+        </li>
+        <li class="request__item">
+          Оставить заявку
+          <svg class="cases__link-image" width="28" height="28">
+            <use xlink:href="./img/sprite.svg#arrow-request"></use>
+          </svg>
+        </li>
+        <li class="request__item">
+          Оставить заявку
+          <svg class="cases__link-image" width="28" height="28">
+            <use xlink:href="./img/sprite.svg#arrow-request"></use>
+          </svg>
+        </li>        
+        <li class="request__item">
+          Оставить заявку
+          <svg class="cases__link-image" width="28" height="28">
+            <use xlink:href="./img/sprite.svg#arrow-request"></use>
+          </svg>
+        </li>
+        <li class="request__item">
+          Оставить заявку
+          <svg class="cases__link-image" width="28" height="28">
+            <use xlink:href="./img/sprite.svg#arrow-request"></use>
+          </svg>
+        </li>
+        <li class="request__item">
+          Оставить заявку
+          <svg class="cases__link-image" width="28" height="28">
+            <use xlink:href="./img/sprite.svg#arrow-request"></use>
+          </svg>
+        </li>
+      </ul>
+    </section>
+
+    <!-- About Reviews Section -->
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title">Отзывы</h2>
+        <div class="about__info about-info">
+          <p class="about-info__title">Довольные клиенты - наш приоритет.</p>
+          <p class="about-info__description">Мы ценим каждого клиента и благодарственные письма для нас являются  - лучшим вознаграждением!</p>
+          <ul class="about__list percent-list">
+            <li class="percent-list__item">
+              <span class="percent-list__number">72%</span>
+              клиентов возвращается к нам снова
+            </li>
+            <li class="percent-list__item">
+              <span class="percent-list__number">65%</span>
+              клиентов приходят по рекомендации
+            </li>
+          </ul>     
+        </div>
+        <div class="about__thanks thanks">
+          <ul class="thanks__list">
+            <li class="thanks__item">
+              <img class="thanks__image" width="396" height="512" href="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+            </li>
+            <li class="thanks__item">
+              <img class="thanks__image" width="396" height="512" href="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+            </li>
+            <li class="thanks__item">
+              <img class="thanks__image" width="396" height="512" href="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+            </li>            
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Request Section -->
+    <section class="about">
+      <div class="container">
+        <h2 class="about__title">Заявка</h2>
+        <div class="about__info about-info">
+          <p class="about-info__title about-info__title--request">Обсудить стратегию решения задач по Вашему проекту</p>
+          <a class="about-info__request-link" href="#">
+            Скачать бриф
+            <svg class="cases__link-image" width="23" height="27">
+              <use xlink:href="./img/sprite.svg#arrow-brief"></use>
+            </svg>
+          </a>     
+        </div>
+        <div class="about__form-wrapper">
+          <form class="about__form form">
+
+            <!-- Contacts Fieldset -->
+            <fieldset class="form__fieldset form__fieldset--user">
+              <p class="form__legend">Ваши контакты</p>
+              <ul class="form__list form__list--user">
+                <li class="field field--name">
+                  <label class="field__label" for="name"></label>
+                  <input class="field__input" type="text" name="name" id="name" placeholder="ФИО">
+                </li>
+                <li class="field">
+                  <label class="field__label" for="phone"></label>
+                  <input class="field__input" type="tel" name="name" id="phone" placeholder="Ваш телефон">
+                </li>
+                <li class="field">
+                  <label class="field__label" for="email"></label>
+                  <input class="field__input" type="email" name="name" id="email" placeholder="Ваша почта">
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- About Fieldset -->
+            <fieldset class="form__fieldset form__fieldset--about">
+              <p class="form__legend">О проекте</p>
+              <ul class="form__list form__list--about">
+                <li class="radio">
+                  <label class="radio__label" for="complex">Комплексный</label>
+                  <input class="radio__input" type="radio" name="about" id="complex" value="complex">
+                </li>
+                <li class="radio">
+                  <label class="radio__label" for="brand">Брендинг</label>
+                  <input class="radio__input" type="radio" name="about" id="brand" value="brand">
+                </li>
+                <li class="radio">
+                  <label class="radio__label" for="web">Веб</label>
+                  <input class="radio__input" type="radio" name="about" id="web" value="web">
+                </li>
+                <li class="radio">
+                  <label class="radio__label" for="promotion">Продвижение</label>
+                  <input class="radio__input" type="radio" name="about" id="promotion" value="promotion">
+                </li>
+              </ul>
+            </fieldset>
+
+            <!-- Comment Fieldset -->
+            <fieldset class="form__fieldset form__fieldset--comment">
+              <label class="textarea-label visually-hidden" for="comment">Опишите задачу</label>
+              <textarea class="textarea-input" id="comment" name="comment"
+                placeholder="Опишите задачу"></textarea>
+            </fieldset>
+
+            <!-- File Fieldset -->
+            <fieldset class="form__fieldset form__fieldset--file">
+              <label for="file">
+                Прикрепить файл
+                <svg class="cases__link-image" width="28" height="28">
+                  <use xlink:href="./img/sprite.svg#file-upload"></use>
+                </svg>
+              </label>
+              <input type="file" id="file" name="file" multiple>
+            </fieldset>
+
+            <!-- Info Form -->
+            <div class="form__info form-info">
+              <ol class="form-info__list">
+                <li class="form-info__item">
+                  Из какой вы компании, чем она занимается?
+                </li>
+                <li class="form-info__item">
+                  С чем мы можем помочь? Как представляете результат?
+                </li>
+                <li class="form-info__item">
+                  На какой срок работы и бюджет рассчитываете?
+                </li>
+                <li class="form-info__item">
+                  Напишите, если удобнее общаться в мессенджере.
+                </li>
+              </ol>
+            </div>
+
+            <button class="form__button button" type="submit">Оставить заявку</button>
+            <p class="form__text">Нажав на кнопку, соглашаюсь на обработку <a class="form__link" href="#">персональных данных</a></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__links footer-links">
+      <p class="footer-links__title">Стратегия</p>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Маркетинговый аудит и аналитика</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Бренд-стратегия</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Контент-стратегия</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">PR-стратегия</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Инфлюенс-стратегия</a>
+        </li>
+      </ul>      
+    </div>
+    <div class="footer__links footer-links">
+      <p class="footer-links__title">Маркетинг/Инструменты</p>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">PR для персон и брендов</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Работа с репутацией</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Трафиковая реклама</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">SEO</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">SMM</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Инфлюенс-маркетинг</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Креативные рассылки</a>
+        </li>
+      </ul>      
+    </div>
+    <div class="footer__links footer-links">
+      <p class="footer-links__title">Продакшн/Производство</p>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">UI / UX дизайн</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Многофункциональные сайты</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Конверсионные лендинги</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Контент мейкинг</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Фото и видео</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="#">Спецпроекты</a>
+        </li>
+      </ul>      
+    </div>
+    <div class="footer__links footer-links">
+      <p class="footer-links__title">Контакты</p>
+      <ul class="footer-links__list">
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="mailto:email@mail.ru">email@mail.ru</a>
+        </li>
+        <li class="footer-links__item">
+          <a class="footer-links__link" href="tel:88001235697">8 800 123 56 97</a>
+        </li>
+        <li class="footer-links__item">
+          <span class="footer-links__link">Москва, Ул. Название, д 88</span>
+        </li>
+      </ul>
+      <div class="footer-links__social social">
+        <a class="social__link" href="#">
+          <svg class="social__image" width="22" height="24">
+            <use xlink:href="./img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+        <a class="social__link" href="#">
+          <svg class="social__image" width="18" height="18">
+            <use xlink:href="./img/sprite.svg#inst"></use>
+          </svg>
+        </a>
+      </div>
+      <a class="footer-links__title" href="#">Кейсы</a>
+      <a class="footer-links__title" href="#">Отзывы</a>      
+    </div>
+    <p class="footer__rights">Все права защищены  |  <a class="footer__personal-data" href="#">Политика конфиденциальности</a></p>
+  </footer>
 
   <script src="./js/script.js"></script>
 </body>

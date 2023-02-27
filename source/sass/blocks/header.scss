@@ -1,8 +1,7 @@
 .header {
-  background-color: $dark-color;
-  height: 60px;
-
-  @media (min-width: $tablet-width) {
-    height: 90px;
-  }
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 23px;
+  min-height: 140px;
+  background: $dark-color;
 }

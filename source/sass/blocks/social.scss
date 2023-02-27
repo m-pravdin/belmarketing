@@ -1,0 +1,33 @@
+.social {
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  gap: 15px;
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white-color;
+}
+
+.social__text {
+  position: relative;
+  padding-right: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    display: flex;
+    height: 1px;
+    width: 30px;
+    right: 10px;
+    background-color: $white-color;
+  }
+}
