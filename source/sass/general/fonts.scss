@@ -27,3 +27,13 @@
     url("../fonts/GothamPro-Bold.woff") format("woff");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  src: local("GothamPro"),
+    url("../fonts/Roboto-Black.woff2") format("woff2"),
+    url("../fonts/Roboto-Black.woff") format("woff");
+  font-display: swap;
+}

@@ -1,0 +1,39 @@
+.about {
+  &--cases-slider {
+    background-color: $dark-color;
+
+    .about__title {
+      -webkit-text-stroke: 1px $gray-color;
+    }
+
+    .about-info__title {
+      color: $white-color;
+    }
+
+    .about-info__description {
+      color: $white-color;
+    }
+  }
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: minmax(50px, 110px) minmax(420px, 640px) minmax(450px, 585px);
+  max-width: 1550px;
+  padding-left: 80px;
+  padding-right: 130px;
+}
+
+.about__title {
+  font-family: Roboto;
+  font-size: 120px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px $dark-color;
+}
+
+.about__image-slider {
+  background-color: $orange-color;
+}

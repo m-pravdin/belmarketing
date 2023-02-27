@@ -7,7 +7,12 @@
   max-width: 1720px;
   margin: 0 auto;
   position: relative;
-  // margin: 0 113px 0 125px;
+  // padding: 0 113px 0 125px;
+}
+
+.list {
+  padding: 0;
+  list-style-type: none;
 }
 
 *,

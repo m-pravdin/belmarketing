@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./fonts/Roboto-Black.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/GothamPro-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/GothamPro.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="./fonts/GothamPro-Bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -165,25 +166,25 @@
 
     <!-- About Advantages Section -->
     <section class="about">
-      <div class="container">
+      <div class="about__container container">
         <h2 class="about__title">Услуги</h2>
         <div class="about__info about-info">
           <p class="about-info__title">Отлаженная стратегия многоканального влияния на вашу Целевую Аудиторию</p>
           <p class="about-info__description">В зависимости от задач мы привлекаем {покупателей, аудиторию, инвесторов}</p>
         </div>
         <div class="about__advantages advantages">
-          <ul class="advantages__list">
+          <ul class="advantages__list list">
             <li class="advantages__item advantages__item--clients">
-              100+
-              <span class="advantages__text">Довольных клиентов</span>
+              <span class="advantages__text">100+</span>
+              Довольных клиентов
             </li>
             <li class="advantages__item advantages__item--projects">
-              300+
-              <span class="advantages__text">Успешных проектов</span>
+              <span class="advantages__text">300+</span>
+              Успешных проектов
             </li>
             <li class="advantages__item advantages__item--years">
-              15
-              <span class="advantages__text">лет на рынке</span>
+              <span class="advantages__text">15</span>
+              лет на рынке
             </li>
           </ul>
         </div>
@@ -192,12 +193,12 @@
 
     <!-- Service Strategy Section -->
     <section class="service service--strategy">
-      <div class="container">
+      <div class="service__container container">
         <div class="service__title-wrapper">
           <h2 class="service__title">Стратегия</h2>
           <p class="service__description">Медиапланирование и аудирование</p>
         </div>
-        <ul class="service__list">
+        <ul class="service__list list">
           <li class="service__item service__item--active">
             Маркетинговый аудит и аналитика
           </li>
@@ -219,11 +220,11 @@
 
     <!-- Service Marketing Section -->
     <section class="service service--marketing">
-      <div class="container">
+      <div class="service__container container">
         <div class="service__title-wrapper">
           <h2 class="service__title">Маркетинг / инструменты</h2>
         </div>
-        <ul class="service__list">
+        <ul class="service__list list">
           <li class="service__item service__item--active">
             PR для персон и брендов
           </li>
@@ -251,11 +252,11 @@
 
     <!-- Service Production Section -->
     <section class="service service--production">
-      <div class="container">
+      <div class="service__container container">
         <div class="service__title-wrapper">
           <h2 class="service__title">Продакшн / производство</h2>
         </div>
-        <ul class="service__list">
+        <ul class="service__list list">
           <li class="service__item service__item--active">
             UI / UX дизайн
           </li>
@@ -363,17 +364,17 @@
 
     <!-- About Cases Section -->
     <section class="about">
-      <div class="container">
+      <div class="about__container container">
         <h2 class="about__title">Кейсы</h2>
         <div class="about__info about-info">
           <p class="about-info__title">Эффективно занимаемся маркетингом более 15 лет</p>
           <p class="about-info__description">Команда узких специалистов. Высокий уровень компетенций. Отлаженные стратегии. Нестандартные решения Ваших задач в 5 основных сферах экономики</p>
         </div>
         <div class="about__cases cases">
-          <ul class="cases__list">
+          <ul class="cases__list list">
             <li class="cases__item">
               <img class="cases__image" width="225" height="221" href="./img/education-sector-icon.png" alt="Образовательный сектор.">
-              Образовательный сектор 
+              <p class="cases__title cases__title--visible">Образовательный сектор</p> 
               <a class="cases__link" href="#">
                 Смотреть примеры
               <svg class="cases__link-image" width="28" height="28">
@@ -383,7 +384,7 @@
             </li>
             <li class="cases__item">
               <img class="cases__image" width="278" height="180" href="./img/finance-sector-icon.png" alt="Финансовый и банковский сектор.">
-              Финансовый и банковский сектор
+              <p class="cases__title">Финансовый и банковский сектор</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
               <svg class="cases__link-image" width="28" height="28">
@@ -393,7 +394,7 @@
             </li>
             <li class="cases__item">
               <img class="cases__image" width="384" height="231" href="./img/transport-logistics-icon.png" alt="Транспорт и логистика.">
-              Транспорт и логистика
+              <p class="cases__title">Транспорт и логистика</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
               <svg class="cases__link-image" width="28" height="28">
@@ -403,7 +404,7 @@
             </li>
             <li class="cases__item">
               <img class="cases__image" width="292" height="300" href="./img/supply-industry-icon.png" alt="Производство и поставки.">
-              Производство и поставки
+              <p class="cases__title">Производство и поставки</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
               <svg class="cases__link-image" width="28" height="28">
@@ -413,7 +414,7 @@
             </li>
             <li class="cases__item">
               <img class="cases__image" width="217" height="234" href="./img/retail-ecommerce-icon.png" alt="Ритейл и е-коммерс.">
-              Ритейл и е-коммерс
+              <p class="cases__title">Ритейл и е-коммерс</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
               <svg class="cases__link-image" width="28" height="28">
@@ -427,8 +428,8 @@
     </section>
 
     <!-- About Cases Slider Section -->
-    <section class="about">
-      <div class="container">
+    <section class="about about--cases-slider">
+      <div class="about__container container">
         <h2 class="about__title">Кейсы</h2>
         <div class="about__info about-info">
           <div class="about-info__control control">
@@ -465,7 +466,7 @@
               </svg>
             </a>
             <a class="more__link" href="#">
-              Смотреть отчет
+              Все кейсы
               <svg class="cases__link-image" width="28" height="28">
                 <use xlink:href="./img/sprite.svg#cases-link"></use>
               </svg>
@@ -473,7 +474,7 @@
           </div>      
         </div>
         <div class="about__image-slider about-slider">
-          <ul class="about-slider__list">
+          <ul class="about-slider__list list">
             <li class="about-slider__item about-slider__item--visible">
               <img src="#" alt="" class="about-slider__image">
             </li>
@@ -485,19 +486,7 @@
       </div>
     </section>
     <section class="request">
-      <ul class="request__list">
-        <li class="request__item">
-          Оставить заявку
-          <svg class="cases__link-image" width="28" height="28">
-            <use xlink:href="./img/sprite.svg#arrow-request"></use>
-          </svg>
-        </li>
-        <li class="request__item">
-          Оставить заявку
-          <svg class="cases__link-image" width="28" height="28">
-            <use xlink:href="./img/sprite.svg#arrow-request"></use>
-          </svg>
-        </li>
+      <ul class="request__list list">
         <li class="request__item">
           Оставить заявку
           <svg class="cases__link-image" width="28" height="28">
@@ -539,12 +528,12 @@
 
     <!-- About Reviews Section -->
     <section class="about">
-      <div class="container">
+      <div class="about__container container">
         <h2 class="about__title">Отзывы</h2>
         <div class="about__info about-info">
           <p class="about-info__title">Довольные клиенты - наш приоритет.</p>
           <p class="about-info__description">Мы ценим каждого клиента и благодарственные письма для нас являются  - лучшим вознаграждением!</p>
-          <ul class="about__list percent-list">
+          <ul class="about__list percent-list list">
             <li class="percent-list__item">
               <span class="percent-list__number">72%</span>
               клиентов возвращается к нам снова
@@ -556,7 +545,7 @@
           </ul>     
         </div>
         <div class="about__thanks thanks">
-          <ul class="thanks__list">
+          <ul class="thanks__list list">
             <li class="thanks__item">
               <img class="thanks__image" width="396" height="512" href="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
             </li>

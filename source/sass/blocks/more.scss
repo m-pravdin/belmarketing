@@ -1,0 +1,21 @@
+.more {
+  display: flex;
+  align-items: center;
+  gap: 37px;
+}
+
+.more__text {
+  font-size: 16px;
+  line-height: 188%;
+  color: $white-color;
+}
+
+.more__link {
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 188%;
+  color: $orange-color;
+  text-decoration: none;
+}
