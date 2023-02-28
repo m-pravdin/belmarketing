@@ -1,3 +1,7 @@
+.service {
+  width: 100vh;
+}
+
 .service__container {
   display: grid;
   grid-template-columns: minmax(490px, 700px) minmax(375px, 465px);
