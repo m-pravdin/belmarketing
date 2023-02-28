@@ -1,0 +1,26 @@
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.footer-links__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+  color: $white-color;
+}
+
+.footer-links__list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-links__link {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 112%;
+  color: $form-text-color;
+  text-decoration: none;
+}

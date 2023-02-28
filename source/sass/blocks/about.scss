@@ -1,5 +1,5 @@
 .about {
-  &--cases-slider {
+  &--black {
     background-color: $dark-color;
 
     .about__title {
@@ -36,4 +36,8 @@
 
 .about__image-slider {
   background-color: $orange-color;
+}
+
+.about-info__description {
+  margin-bottom: 50px;
 }

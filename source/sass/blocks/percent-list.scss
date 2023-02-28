@@ -1,0 +1,21 @@
+.percent-list {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  padding-left: 40px;
+}
+
+.percent-list__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.percent-list__number {
+  font-size: 90px;
+  font-weight: 700;
+}
+
+.percent-list__text {
+  max-width: 253px;
+}

@@ -21,3 +21,11 @@
   text-transform: uppercase;
   color: $white-color;
 }
+
+.about-info__request-link {
+  display: flex;
+  gap: 10px;
+  padding-left: 40px;
+  text-decoration: none;
+  color: $orange-color;
+}

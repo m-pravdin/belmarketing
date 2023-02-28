@@ -428,7 +428,7 @@
     </section>
 
     <!-- About Cases Slider Section -->
-    <section class="about about--cases-slider">
+    <section class="about about--black">
       <div class="about__container container">
         <h2 class="about__title">Кейсы</h2>
         <div class="about__info about-info">
@@ -531,16 +531,16 @@
       <div class="about__container container">
         <h2 class="about__title">Отзывы</h2>
         <div class="about__info about-info">
-          <p class="about-info__title">Довольные клиенты - наш приоритет.</p>
+          <p class="about-info__title">Довольные клиенты -&nbsp;наш приоритет.</p>
           <p class="about-info__description">Мы ценим каждого клиента и благодарственные письма для нас являются  - лучшим вознаграждением!</p>
           <ul class="about__list percent-list list">
             <li class="percent-list__item">
               <span class="percent-list__number">72%</span>
-              клиентов возвращается к нам снова
+              <span class="percent-list__text">клиентов возвращается к нам снова</span>
             </li>
             <li class="percent-list__item">
               <span class="percent-list__number">65%</span>
-              клиентов приходят по рекомендации
+              <span class="percent-list__text">клиентов приходят по рекомендации</span>
             </li>
           </ul>     
         </div>
@@ -561,8 +561,8 @@
     </section>
 
     <!-- About Request Section -->
-    <section class="about">
-      <div class="container">
+    <section class="about about--black">
+      <div class="about__container container">
         <h2 class="about__title">Заявка</h2>
         <div class="about__info about-info">
           <p class="about-info__title about-info__title--request">Обсудить стратегию решения задач по Вашему проекту</p>
@@ -579,7 +579,7 @@
             <!-- Contacts Fieldset -->
             <fieldset class="form__fieldset form__fieldset--user">
               <p class="form__legend">Ваши контакты</p>
-              <ul class="form__list form__list--user">
+              <ul class="form__list list">
                 <li class="field field--name">
                   <label class="field__label" for="name"></label>
                   <input class="field__input" type="text" name="name" id="name" placeholder="ФИО">
@@ -598,7 +598,7 @@
             <!-- About Fieldset -->
             <fieldset class="form__fieldset form__fieldset--about">
               <p class="form__legend">О проекте</p>
-              <ul class="form__list form__list--about">
+              <ul class="form__list form__list--radio list">
                 <li class="radio">
                   <label class="radio__label" for="complex">Комплексный</label>
                   <input class="radio__input" type="radio" name="about" id="complex" value="complex">
@@ -627,13 +627,13 @@
 
             <!-- File Fieldset -->
             <fieldset class="form__fieldset form__fieldset--file">
-              <label for="file">
+              <label class="file-label" for="file">
                 Прикрепить файл
-                <svg class="cases__link-image" width="28" height="28">
+                <svg class="cases__link-image" width="30" height="16">
                   <use xlink:href="./img/sprite.svg#file-upload"></use>
                 </svg>
               </label>
-              <input type="file" id="file" name="file" multiple>
+              <input class="file-input" type="file" id="file" name="file" multiple>
             </fieldset>
 
             <!-- Info Form -->
@@ -654,7 +654,12 @@
               </ol>
             </div>
 
-            <button class="form__button button" type="submit">Оставить заявку</button>
+            <button class="form__button button" type="submit">
+              Оставить заявку
+              <svg class="form__button-img" width="88" height="32">
+                <use xlink:href="./img/sprite.svg#err"></use>
+              </svg>
+            </button>
             <p class="form__text">Нажав на кнопку, соглашаюсь на обработку <a class="form__link" href="#">персональных данных</a></p>
           </form>
         </div>
@@ -666,7 +671,7 @@
   <footer class="footer">
     <div class="footer__links footer-links">
       <p class="footer-links__title">Стратегия</p>
-      <ul class="footer-links__list">
+      <ul class="footer-links__list list">
         <li class="footer-links__item">
           <a class="footer-links__link" href="#">Маркетинговый аудит и аналитика</a>
         </li>
@@ -686,7 +691,7 @@
     </div>
     <div class="footer__links footer-links">
       <p class="footer-links__title">Маркетинг/Инструменты</p>
-      <ul class="footer-links__list">
+      <ul class="footer-links__list list">
         <li class="footer-links__item">
           <a class="footer-links__link" href="#">PR для персон и брендов</a>
         </li>
@@ -712,7 +717,7 @@
     </div>
     <div class="footer__links footer-links">
       <p class="footer-links__title">Продакшн/Производство</p>
-      <ul class="footer-links__list">
+      <ul class="footer-links__list list">
         <li class="footer-links__item">
           <a class="footer-links__link" href="#">UI / UX дизайн</a>
         </li>
@@ -735,7 +740,7 @@
     </div>
     <div class="footer__links footer-links">
       <p class="footer-links__title">Контакты</p>
-      <ul class="footer-links__list">
+      <ul class="footer-links__list list">
         <li class="footer-links__item">
           <a class="footer-links__link" href="mailto:email@mail.ru">email@mail.ru</a>
         </li>
