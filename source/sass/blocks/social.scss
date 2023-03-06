@@ -5,6 +5,10 @@
   justify-content: center;
   white-space: nowrap;
   gap: 15px;
+
+  &--footer {
+    justify-content: flex-start;
+  }
 }
 
 .social__link {
@@ -12,6 +16,10 @@
   align-items: center;
   justify-content: center;
   color: $white-color;
+
+  &--footer {
+    color: $gray-color;
+  }
 }
 
 .social__text {

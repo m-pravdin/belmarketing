@@ -1,3 +1,7 @@
+.advantages {
+  position: relative;
+}
+
 .advantages__text {  
   font-family: $font-second;
   font-size: 75px;
@@ -5,4 +9,9 @@
   line-height: 120%;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px $dark-color;
+}
+
+.advantages__arrow {
+  position: absolute;
+  fill: none;
 }

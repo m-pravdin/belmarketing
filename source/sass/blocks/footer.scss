@@ -1,5 +1,20 @@
 .footer {
-  display: flex;
-  flex-wrap: wrap;
   background-color: $footer-background-color;
+}
+
+.footer__container {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+}
+
+.footer__links-wrapper {
+  display: flex;
+  gap: 85px;
+  padding-bottom: 52px;
+}
+
+.footer__links {
+  max-width: 240px;
 }

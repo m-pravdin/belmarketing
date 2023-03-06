@@ -1,6 +1,7 @@
 .about-info {
   grid-column: 2/3;
   z-index: 2;
+  border-right: 1px solid $border-gray-color;
 }
 
 .about-info__title {
@@ -11,6 +12,7 @@
 }
 
 .about-info__description {
+  max-width: 510px;
   padding-left: 40px;
   font-weight: 300;
   font-size: 24px;
@@ -21,6 +23,7 @@
 .about-info__list {
   padding: 0;
   padding-left: 65px;
+  margin-bottom: 85px;
   font-size: 18px;
   line-height: 167%;
   text-transform: uppercase;
@@ -37,4 +40,5 @@
 
 .about__advantages {
   grid-column: 3/4;
+  border-right: 1px solid $border-gray-color;
 }

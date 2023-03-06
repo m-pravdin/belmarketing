@@ -166,8 +166,10 @@
 
     <!-- About Advantages Section -->
     <section class="about">
+      <h2 class="visually-hidden">Услуги</h2>
       <div class="about__container container">
-        <h2 class="about__title">Услуги</h2>
+        <img class="about__title" src="./img/about-service-title.svg" width="100" height="474" alt="Изображение заголовка раздела - Услуги.">
+        <!-- <h2 class="about__title">Услуги</h2> -->
         <div class="about__info about-info">
           <p class="about-info__title">Отлаженная стратегия многоканального влияния на вашу Целевую Аудиторию</p>
           <p class="about-info__description">В зависимости от задач мы привлекаем {покупателей, аудиторию, инвесторов}</p>
@@ -186,16 +188,16 @@
               <span class="advantages__text">15</span>
               лет на рынке
             </li>
-          </ul>          
-          <!-- <svg class="advantages__arrow" width="88" height="32">
-            <use xlink:href="./img/sprite.svg#err"></use>
+          </ul>
+          <svg class="advantages__arrow advantages__arrow--one" width="99" height="67">
+            <use xlink:href="./img/sprite.svg#arrow-first"></use>
           </svg>                    
-          <svg class="advantages__arrow" width="88" height="32">
-            <use xlink:href="./img/sprite.svg#err"></use>
+          <svg class="advantages__arrow advantages__arrow--two" width="99" height="67">
+            <use xlink:href="./img/sprite.svg#arrow-two"></use>
           </svg>                    
-          <svg class="advantages__arrow" width="88" height="32">
-            <use xlink:href="./img/sprite.svg#err"></use>
-          </svg> -->
+          <svg class="advantages__arrow advantages__arrow--three" width="103" height="69">
+            <use xlink:href="./img/sprite.svg#arrow-three"></use>
+          </svg>
         </div>
       </div>
     </section>
@@ -203,7 +205,7 @@
     <!-- Service Strategy Section -->
     <section class="service service--strategy">
       <div class="service__container container">
-        <div class="service__title-wrapper">
+        <div class="service__title-wrapper service__title-wrapper--strategy">
           <h2 class="service__title">Стратегия</h2>
           <p class="service__description">Медиапланирование и аудирование</p>
         </div>
@@ -230,7 +232,7 @@
     <!-- Service Marketing Section -->
     <section class="service service--marketing">
       <div class="service__container container">
-        <div class="service__title-wrapper">
+        <div class="service__title-wrapper service__title-wrapper--marketing">
           <h2 class="service__title">Маркетинг / инструменты</h2>
         </div>
         <ul class="service__list list">
@@ -262,7 +264,7 @@
     <!-- Service Production Section -->
     <section class="service service--production">
       <div class="service__container container">
-        <div class="service__title-wrapper">
+        <div class="service__title-wrapper service__title-wrapper--production">
           <h2 class="service__title">Продакшн / производство</h2>
         </div>
         <ul class="service__list list">
@@ -373,18 +375,26 @@
 
     <!-- About Cases Section -->
     <section class="about">
+      <h2 class="visually-hidden">Кейсы</h2>
       <div class="about__container container">
-        <h2 class="about__title">Кейсы</h2>
+        <img class="about__title" src="./img/about-cases-title.svg" width="100" height="474" alt="Изображение заголовка раздела - Кейсы.">
         <div class="about__info about-info">
-          <p class="about-info__title">Эффективно занимаемся маркетингом более 15 лет</p>
+          <p class="about-info__title">Эффективно занимаемся маркетингом более 15&nbsp;лет</p>
           <p class="about-info__description">Команда узких специалистов. Высокий уровень компетенций. Отлаженные стратегии. Нестандартные решения Ваших задач в 5 основных сферах экономики</p>
         </div>
         <div class="about__cases cases">
           <ul class="cases__list list">
+            <li class="cases__item cases__item--background">
+              <!-- <svg class="cases__image" width="584" height="584">
+                <use xlink:href="./img/sprite.svg#cases-background"></use>
+              </svg> -->
+              <img class="cases__image" width="584" height="584" src="./img/cases-background.png" alt="Финансовый и банковский сектор.">
+            </li>
             <li class="cases__item">
-              <svg class="cases__image" width="225" height="221">
+              <!-- <svg class="cases__image" width="225" height="221">
                 <use xlink:href="./img/sprite.svg#education-sector-icon"></use>
-              </svg>
+              </svg> -->
+              <img class="cases__image" width="278" height="180" src="./img/education-sector-icon.png" alt="Финансовый и банковский сектор.">
               <p class="cases__title cases__title--visible">Образовательный сектор</p> 
               <a class="cases__link" href="#">
                 Смотреть примеры
@@ -394,7 +404,7 @@
               </a>
             </li>
             <li class="cases__item">
-              <img class="cases__image" width="278" height="180" href="./img/finance-sector-icon.png" alt="Финансовый и банковский сектор.">
+              <img class="cases__image" width="278" height="180" src="./img/finance-sector-icon.png" alt="Финансовый и банковский сектор.">
               <p class="cases__title">Финансовый и банковский сектор</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
@@ -404,7 +414,7 @@
               </a>
             </li>
             <li class="cases__item">
-              <img class="cases__image" width="384" height="231" href="./img/transport-logistics-icon.png" alt="Транспорт и логистика.">
+              <img class="cases__image" width="384" height="231" src="./img/transport-logistics-icon.png" alt="Транспорт и логистика.">
               <p class="cases__title">Транспорт и логистика</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
@@ -414,7 +424,7 @@
               </a>
             </li>
             <li class="cases__item">
-              <img class="cases__image" width="292" height="300" href="./img/supply-industry-icon.png" alt="Производство и поставки.">
+              <img class="cases__image" width="292" height="300" src="./img/supply-industry-icon.png" alt="Производство и поставки.">
               <p class="cases__title">Производство и поставки</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
@@ -424,7 +434,7 @@
               </a>
             </li>
             <li class="cases__item">
-              <img class="cases__image" width="217" height="234" href="./img/retail-ecommerce-icon.png" alt="Ритейл и е-коммерс.">
+              <img class="cases__image" width="217" height="234" src="./img/retail-ecommerce-icon.png" alt="Ритейл и е-коммерс.">
               <p class="cases__title">Ритейл и е-коммерс</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
@@ -440,8 +450,9 @@
 
     <!-- About Cases Slider Section -->
     <section class="about about--black">
+      <h2 class="visually-hidden">Кейсы</h2>
       <div class="about__container container">
-        <h2 class="about__title">Кейсы</h2>
+        <img class="about__title" src="./img/about-cases-slider-title.svg" alt="Изображение заголовка раздела со слайдером - Кейсы.">
         <div class="about__info about-info">
           <div class="about-info__control control">
             <button class="control__button" type="button">
@@ -539,8 +550,9 @@
 
     <!-- About Reviews Section -->
     <section class="about">
+      <h2 class="visually-hidden">Отзывы</h2>
       <div class="about__container container">
-        <h2 class="about__title">Отзывы</h2>
+        <img class="about__title" src="./img/about-review-title.svg" alt="Изображение заголовка раздела - Отзывы.">
         <div class="about__info about-info">
           <p class="about-info__title">Довольные клиенты -&nbsp;наш приоритет.</p>
           <p class="about-info__description">Мы ценим каждого клиента и благодарственные письма для нас являются  - лучшим вознаграждением!</p>
@@ -558,13 +570,13 @@
         <div class="about__thanks thanks">
           <ul class="thanks__list list">
             <li class="thanks__item">
-              <img class="thanks__image" width="396" height="512" href="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+              <img class="thanks__image" width="396" height="512" src="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
             </li>
             <li class="thanks__item">
-              <img class="thanks__image" width="396" height="512" href="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+              <img class="thanks__image" width="396" height="512" src="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
             </li>
             <li class="thanks__item">
-              <img class="thanks__image" width="396" height="512" href="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+              <img class="thanks__image" width="396" height="512" src="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
             </li>            
           </ul>
         </div>
@@ -573,8 +585,9 @@
 
     <!-- About Request Section -->
     <section class="about about--black">
+      <h2 class="visually-hidden">Заявка</h2>
       <div class="about__container container">
-        <h2 class="about__title">Заявка</h2>
+        <img class="about__title" src="./img/about-request-title.svg" alt="Изображение заголовка раздела - Заявка.">
         <div class="about__info about-info">
           <p class="about-info__title about-info__title--request">Обсудить стратегию решения задач по Вашему проекту</p>
           <a class="about-info__request-link" href="#">
@@ -593,7 +606,7 @@
               <ul class="form__list list">
                 <li class="field field--name">
                   <label class="field__label" for="name"></label>
-                  <input class="field__input" type="text" name="name" id="name" placeholder="ФИО">
+                  <input class="field__input field__input--name" type="text" name="name" id="name" placeholder="ФИО">
                 </li>
                 <li class="field">
                   <label class="field__label" for="phone"></label>
@@ -680,104 +693,110 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="footer__links footer-links">
-      <p class="footer-links__title">Стратегия</p>
-      <ul class="footer-links__list list">
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Маркетинговый аудит и аналитика</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Бренд-стратегия</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Контент-стратегия</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">PR-стратегия</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Инфлюенс-стратегия</a>
-        </li>
-      </ul>      
-    </div>
-    <div class="footer__links footer-links">
-      <p class="footer-links__title">Маркетинг/Инструменты</p>
-      <ul class="footer-links__list list">
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">PR для персон и брендов</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Работа с репутацией</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Трафиковая реклама</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">SEO</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">SMM</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Инфлюенс-маркетинг</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Креативные рассылки</a>
-        </li>
-      </ul>      
-    </div>
-    <div class="footer__links footer-links">
-      <p class="footer-links__title">Продакшн/Производство</p>
-      <ul class="footer-links__list list">
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">UI / UX дизайн</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Многофункциональные сайты</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Конверсионные лендинги</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Контент мейкинг</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Фото и видео</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="#">Спецпроекты</a>
-        </li>
-      </ul>      
-    </div>
-    <div class="footer__links footer-links">
-      <p class="footer-links__title">Контакты</p>
-      <ul class="footer-links__list list">
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="mailto:email@mail.ru">email@mail.ru</a>
-        </li>
-        <li class="footer-links__item">
-          <a class="footer-links__link" href="tel:88001235697">8 800 123 56 97</a>
-        </li>
-        <li class="footer-links__item">
-          <span class="footer-links__link">Москва, Ул. Название, д 88</span>
-        </li>
-      </ul>
-      <div class="footer-links__social social">
-        <a class="social__link" href="#">
-          <svg class="social__image" width="22" height="24">
-            <use xlink:href="./img/sprite.svg#vk"></use>
-          </svg>
-        </a>
-        <a class="social__link" href="#">
-          <svg class="social__image" width="18" height="18">
-            <use xlink:href="./img/sprite.svg#inst"></use>
-          </svg>
-        </a>
+    <div class="footer__container container">
+      <div class="footer__links-wrapper">
+        <div class="footer__links footer-links">
+          <p class="footer-links__title">Стратегия</p>
+          <ul class="footer-links__list list">
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Маркетинговый аудит и аналитика</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Бренд-стратегия</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Контент-стратегия</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">PR-стратегия</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Инфлюенс-стратегия</a>
+            </li>
+          </ul>      
+        </div>
+        <div class="footer__links footer-links">
+          <p class="footer-links__title">Маркетинг/Инструменты</p>
+          <ul class="footer-links__list list">
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">PR для персон и брендов</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Работа с репутацией</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Трафиковая реклама</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">SEO</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">SMM</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Инфлюенс-маркетинг</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Креативные рассылки</a>
+            </li>
+          </ul>      
+        </div>
+        <div class="footer__links footer-links">
+          <p class="footer-links__title">Продакшн/Производство</p>
+          <ul class="footer-links__list list">
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">UI / UX дизайн</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Многофункциональные сайты</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Конверсионные лендинги</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Контент мейкинг</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Фото и видео</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="#">Спецпроекты</a>
+            </li>
+          </ul>      
+        </div>
+        <div class="footer__links footer-links">
+          <p class="footer-links__title">Контакты</p>
+          <ul class="footer-links__list list">
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="mailto:email@mail.ru">email@mail.ru</a>
+            </li>
+            <li class="footer-links__item">
+              <a class="footer-links__link" href="tel:88001235697">8 800 123 56 97</a>
+            </li>
+            <li class="footer-links__item">
+              <span class="footer-links__link">Москва, Ул. Название, д 88</span>
+            </li>
+          </ul>
+          <div class="footer-links__social social social--footer">
+            <a class="social__link social__link--footer" href="#">
+              <svg class="social__image" width="22" height="24">
+                <use xlink:href="./img/sprite.svg#vk"></use>
+              </svg>
+            </a>
+            <a class="social__link social__link--footer" href="#">
+              <svg class="social__image" width="18" height="18">
+                <use xlink:href="./img/sprite.svg#inst"></use>
+              </svg>
+            </a>
+          </div>
+          <a class="footer-links__link footer-links__link--page" href="#">Кейсы</a>
+          <a class="footer-links__link footer-links__link--page" href="#">Отзывы</a>      
+        </div>
       </div>
-      <a class="footer-links__title" href="#">Кейсы</a>
-      <a class="footer-links__title" href="#">Отзывы</a>      
+      <div class="footer__copyright copyright">
+        <p class="copyright__text">Все права защищены</p><a class="copyright__personal-data" href="#">Политика конфиденциальности</a>
+      </div>
     </div>
-    <p class="footer__rights">Все права защищены  |  <a class="footer__personal-data" href="#">Политика конфиденциальности</a></p>
   </footer>
 
   <script src="./js/script.js"></script>

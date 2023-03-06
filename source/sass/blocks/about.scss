@@ -1,9 +1,15 @@
 .about {
+  padding-bottom: 150px;
+  border-bottom: 1px solid $border-gray-color;
+  
   &--black {
+    padding-bottom: 75px;
     background-color: $dark-color;
+    border: none;
 
     .about__title {
       -webkit-text-stroke: 1px $gray-color;
+      border-bottom: 1px solid $border-dark-section-color;
     }
 
     .about-info__title {
@@ -13,11 +19,14 @@
     .about-info__description {
       color: $white-color;
     }
+
+    .about__advantages {
+      border-right: 1px solid $border-dark-section-color;
+    }
   }
 }
 
 .about__container {
-  position: relative;
   display: grid;
   grid-template-columns: minmax(50px, 110px) minmax(420px, 690px) minmax(420px, 475px);
   max-width: 1550px;
@@ -27,19 +36,8 @@
 }
 
 .about__title {
-  position: absolute;
   grid-column: 1 / 2;
   margin: 0;
-  height: 90px;
-  font-family: Roboto;
-  font-size: 120px;
-  font-weight: 900;
-  text-transform: uppercase;
-  transform: rotate(-90deg);
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px $dark-color;
-  left: -138px;
-  top: 240px;
 }
 
 .about__image-slider {

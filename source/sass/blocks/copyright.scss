@@ -1,0 +1,22 @@
+.copyright {
+  display: flex;
+  padding: 20px 0;
+}
+
+.copyright__text {
+  margin: 0;
+  margin-right: 15px;
+  padding-right: 10px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 357%;
+  color: $copyright-color;
+}
+
+.copyright__personal-data {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 357%;
+  text-decoration: none;
+  color: $copyright-color;
+}

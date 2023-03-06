@@ -1,7 +1,6 @@
 .footer-links {
   display: flex;
   flex-direction: column;
-  width: 25%;
 }
 
 .footer-links__title {
@@ -12,9 +11,10 @@
 }
 
 .footer-links__list {
+  margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
 }
 
 .footer-links__link {
@@ -23,4 +23,16 @@
   line-height: 112%;
   color: $form-text-color;
   text-decoration: none;
+
+  &--page {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 188%;
+    color: $white-color;
+    margin-bottom: 5px;
+  }
+}
+
+.footer-links__social {
+  margin: 20px 0;
 }
