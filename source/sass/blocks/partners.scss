@@ -2,8 +2,38 @@
   display: flex;
   align-items: center;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
   list-style-type: none;
   gap: 50px;
   max-height: 109px;
-  border-top: 1px solid $border-gray-color;
+  border-bottom: 1px solid $border-gray-color;
+  animation: partners__row 6s linear infinite;
+
+  &--second {
+    animation: partners__row 6s linear infinite reverse;
+    padding-top: 0;
+    padding-bottom: 20px;
+    border-bottom: none;
+  }
+}
+
+@keyframes partners__row {
+  from {
+    margin-left: -30%;
+  }
+
+  to {
+    margin-right: -30%;
+  }
+}
+
+@keyframes partners__row--second {
+  from {
+    margin-right: 30%;
+  }
+
+  to {
+    margin-right: -30%;
+  }
 }

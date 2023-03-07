@@ -1,16 +1,17 @@
-// .service {
-//   width: 100vh;
-// }
+.service {
+  border-bottom: 1px solid $border-gray-color;
+}
 
 .service__container {
   display: grid;
-  grid-template-columns: minmax(490px, 700px) minmax(375px, 465px);
-  max-width: 1250px;
-  padding: 180px 41px 0;
+  grid-template-columns: minmax(490px, 700px) minmax(250px, 370px);
+  max-width: 1160px;
+  padding: 100px 41px 0;
 }
 
 .service__title-wrapper {
   position: sticky;
+  align-self: flex-start;
   top: 0px;
   padding-top: 25px;
   
@@ -52,6 +53,7 @@
   display: flex;
   flex-direction: column;
   gap: 59px;
+  padding: 70px 0;
 }
 
 .service__item {

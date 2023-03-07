@@ -9,6 +9,55 @@
   position: relative;
 }
 
+// .section-borders {
+//   position: absolute;
+//   left: 21%;
+//   top: 0%;
+//   height: 100%;
+//   width: 1px;
+//   background-color: red;
+
+//   &::before{
+//     content: "";
+//     position: absolute;
+//     right: 71%;
+//     top: 0%;
+//     height: 100%;
+//     width: 1px;
+//     background-color: red;
+//   }
+
+//   &::after {
+//     content: "";
+//     position: absolute;
+//     left: 21%;
+//     top: 0%;
+//     height: 100%;
+//     width: 1px;
+//     background-color: red;
+//   }
+// }
+
+.section-borders__line {
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background-color: $border-gray-color;
+  z-index: -5;
+
+  &--one {
+    left: 20.3%;
+  }
+
+  &--two {
+    left: 58.1%;
+  }
+
+  &--three {
+    left: 83.2%;
+  }
+}
+
 .list {
   padding: 0;
   list-style-type: none;

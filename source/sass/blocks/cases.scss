@@ -1,3 +1,10 @@
+.cases {
+  background-image: url(./img/cases-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .cases__list {
   display: flex;
   flex-direction: column;
