@@ -1,10 +1,31 @@
-.request__list {
+.request {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid $border-gray-color;
+}
+
+.request__row {
   display: flex;
+  width: auto;
   gap: 65px;
+  color: $dark-color;
+  text-decoration: none;
+  animation: request__row 10s 0s linear infinite;
 }
 
 .request__item {
+  white-space: nowrap;
   display: flex;
   gap: 5px;
   align-items: center;
+}
+
+@keyframes request__row {
+  from {
+    margin-left: -40%;
+  }
+
+  to {
+    margin-right: 40%;
+  }
 }
