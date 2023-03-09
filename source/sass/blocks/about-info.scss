@@ -4,6 +4,30 @@
   top: 0;
   grid-column: 2/3;
   z-index: 2;
+  padding-top: 25px;
+
+  @media (max-width: $mobile-width) {
+    position: relative;
+    align-self: center;
+    padding: 0;
+  }
+
+  &--request {
+    position: relative;
+    height: 700px;
+    background-image: url("../img/request-info-background.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 404px 707px;
+
+    @media (max-width: $mobile-width) {
+      padding-left: 10px;
+      padding-top: 50px;
+      height: 485px;
+      background-image: url("../img/request-info-background-mobile.svg");
+      background-size: 272px 481px;
+    }
+  }
 }
 
 .about-info__title {
@@ -11,6 +35,36 @@
   font-weight: 700;
   font-size: 50px;
   line-height: 130%;
+  max-width: 570px;
+
+  @media (max-width: $mobile-width) {
+    padding-left: 22px;
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  &--cases {
+    @media (max-width: $mobile-width) {
+      padding-left: 40px;
+    }
+  }
+
+  &--slider {
+    @media (max-width: $mobile-width) {
+      padding-left: 40px;
+    }
+  }
+
+  &--request {
+    max-width: 270px;
+    margin-left: 27px;
+
+    @media (max-width: $mobile-width) {
+      max-width: 170px;
+      line-height: 120%;
+    }
+  }
 }
 
 .about-info__description {
@@ -20,6 +74,22 @@
   font-size: 24px;
   line-height: 125%;
   color: $gray-color;
+
+
+  @media (max-width: $mobile-width) {
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 120%;
+
+    &--cases {
+      padding-left: 40px;
+    }
+
+    &--slider {
+      padding-left: 40px;
+      line-height: 150%;
+    }
+  }
 }
 
 .about-info__list {
@@ -35,7 +105,12 @@
 .about-info__request-link {
   display: flex;
   gap: 10px;
-  padding-left: 40px;
+  padding-left: 71px;
   text-decoration: none;
   color: $orange-color;
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    padding-left: 51px;
+  }
 }

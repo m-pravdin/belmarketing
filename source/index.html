@@ -25,7 +25,11 @@
         </div>
         <div class="nav__menu menu">
           <a href="#" class="menu__logo logo">
-            <img src="./img/logo-mobile.png" width="320" height="57" alt="Логотип - Belmarketing." class="logo__image">
+            <picture>
+              <source media="(max-width: 390px)" type="image/webp" srcset="./img/logo-menu-mobile.webp 1x, ./img/logo-menu-mobile@2x.webp 2x">
+              <source media="(max-width: 390px)" type="image/png" srcset="./img/logo-menu-mobile.png 1x, ./img/logo-menu-mobile@2x.png 2x">
+              <img class="logo__image" src="./img/logo-menu-desktop.png" srcset="./img/logo-menu-desktop@2x.png" width="678" height="125" alt="Логотип - Belmarketing.">
+            </picture>
           </a>
           <ul class="menu__list menu-list">
             <li class="menu-list__item">
@@ -125,12 +129,14 @@
         </div>
         <div class="intro__logo-wrapper">
           <picture>
-          <img class="intro__logo" src="./img/logo-intro-desktop.png" width="404" height="707" alt="Логотип - Belmarketing в Intro.">
+            <source media="(max-width: 390px)" type="image/webp" srcset="./img/logo-intro-mobile.webp 1x, ./img/logo-intro-mobile@2x.webp 2x">
+            <source media="(max-width: 390px)" type="image/jpg" srcset="./img/logo-intro-mobile.png 1x, ./img/logo-intro-mobile@2x.png 2x">
+            <img class="intro__logo" src="./img/logo-intro-desktop.png" width="404" height="707" alt="Логотип - Belmarketing в Intro.">
           </picture>
         </div>    
         <div class="intro__info offer">
           <p class="offer__text">Продуманные инструменты для достижения поставленных целей</p>
-          <h1 class="offer__title">Стратегический и&nbsp;системный маркетинг <span>для_ритейлеров</span></h1>
+          <h1 class="offer__title">Стратегический и&nbsp;системный маркетинг для _ <span>ритейлеров</span></h1>
           <ul class="offer__list category-list">
             <li class="category-list__item">
               <a href="#" class="category-list__link">Реклама</a>
@@ -173,8 +179,10 @@
       </div>
       <h2 class="visually-hidden">Услуги</h2>
       <div class="about__container container">
-        <img class="about__title" src="./img/about-service-title.svg" width="100" height="474" alt="Изображение заголовка раздела - Услуги.">
-        <!-- <h2 class="about__title">Услуги</h2> -->
+        <picture>
+          <source media="(max-width: 520px)" srcset="./img/about-service-title-mobile.svg" width="52" height="275">
+          <img class="about__title" src="./img/about-service-title.svg" width="100" height="474" alt="Изображение заголовка раздела - Услуги.">
+        </picture>
         <div class="about__info about-info">
           <p class="about-info__title">Отлаженная стратегия многоканального влияния на вашу Целевую Аудиторию</p>
           <p class="about-info__description">В зависимости от задач мы привлекаем {покупателей, аудиторию, инвесторов}</p>
@@ -206,7 +214,7 @@
         </div>
       </div>
     </section>
-
+    
     <!-- Service Strategy Section -->
     <section class="service service--strategy">
       <div class="section-borders">
@@ -434,7 +442,10 @@
 
     <!-- Background Animation Section -->
     <section class="background-animation">
-      <img class="background-animation__image" src="./img/logo-animation.jpg" width="1920" height="474" alt="Анимация логотипа Belmarketing.">
+      <picture>
+        <source media="(max-width: 520px)" srcset="./img/logo-animation-mobile.gif">
+        <img class="background-animation__image" src="./img/logo-animation.gif" width="1920" height="474" alt="Анимация логотипа Belmarketing.">
+      </picture>
     </section>
 
     <!-- About Cases Section -->
@@ -445,19 +456,22 @@
         <div class="section-borders__line section-borders__line--three"></div>
       </div>
       <h2 class="visually-hidden">Кейсы</h2>
-      <div class="about__container container">
-        <img class="about__title" src="./img/about-cases-title.svg" width="100" height="474" alt="Изображение заголовка раздела - Кейсы.">
+      <div class="about__container about__container--cases container">
+        <picture>
+          <source media="(max-width: 520px)" srcset="./img/about-cases-title-mobile.svg" width="66" height="240">
+          <img class="about__title" src="./img/about-cases-title.svg" width="100" height="474" alt="Изображение заголовка раздела - Кейсы.">
+        </picture>        
         <div class="about__info about-info">
-          <p class="about-info__title">Эффективно занимаемся маркетингом более 15&nbsp;лет</p>
-          <p class="about-info__description">Команда узких специалистов. Высокий уровень компетенций. Отлаженные стратегии. Нестандартные решения Ваших задач в 5 основных сферах экономики</p>
+          <p class="about-info__title about-info__title--cases">Эффективно занимаемся маркетингом более 15&nbsp;лет</p>
+          <p class="about-info__description about-info__description--cases">Команда узких специалистов. Высокий уровень компетенций. Отлаженные стратегии. Нестандартные решения Ваших задач в 5 основных сферах экономики</p>
         </div>
         <div class="about__cases cases">
           <ul class="cases__list list">
             <li class="cases__item">
-              <!-- <svg class="cases__image" width="225" height="221">
-                <use xlink:href="./img/sprite.svg#education-sector-icon"></use>
-              </svg> -->
-              <img class="cases__image" width="278" height="180" src="./img/education-sector-icon.png" alt="Финансовый и банковский сектор.">
+              <picture>
+                <source type="image/webp" srcset="./img/education-sector-icon.webp 1x, ./img/education-sector-icon@2x.webp 2x">
+                <img class="cases__image" width="225" height="222" src="./img/education-sector-icon.png" srcset="./img/education-sector-icon@2x.png" alt="Образовательный сектор.">
+              </picture>
               <p class="cases__title cases__title--visible">Образовательный сектор</p> 
               <a class="cases__link" href="#">
                 Смотреть примеры
@@ -467,7 +481,10 @@
               </a>
             </li>
             <li class="cases__item">
-              <img class="cases__image" width="278" height="180" src="./img/finance-sector-icon.png" alt="Финансовый и банковский сектор.">
+              <picture>
+                <source type="image/webp" srcset="./img/finance-sector-icon.webp 1x, ./img/finance-sector-icon@2x.webp 2x">
+                <img class="cases__image" width="276" height="180" src="./img/finance-sector-icon.png" srcset="./img/finance-sector-icon@2x.png" alt="Финансовый и банковский сектор.">
+              </picture>
               <p class="cases__title">Финансовый и банковский сектор</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
@@ -477,7 +494,10 @@
               </a>
             </li>
             <li class="cases__item">
-              <img class="cases__image" width="384" height="231" src="./img/transport-logistics-icon.png" alt="Транспорт и логистика.">
+              <picture>
+                <source type="image/webp" srcset="./img/transport-logistics-icon.webp 1x, ./img/transport-logistics-icon@2x.webp 2x">
+                <img class="cases__image" width="329" height="230" src="./img/transport-logistics-icon.png" srcset="./img/transport-logistics-icon@2x.png" alt="Транспорт и логистика.">
+              </picture>
               <p class="cases__title">Транспорт и логистика</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
@@ -487,7 +507,10 @@
               </a>
             </li>
             <li class="cases__item">
-              <img class="cases__image" width="292" height="300" src="./img/supply-industry-icon.png" alt="Производство и поставки.">
+              <picture>
+                <source type="image/webp" srcset="./img/supply-industry-icon.webp 1x, ./img/supply-industry-icon@2x.webp 2x">
+                <img class="cases__image" width="240" height="247" src="./img/supply-industry-icon.png" srcset="./img/supply-industry-icon@2x.png" alt="Производство и поставки.">
+              </picture>
               <p class="cases__title">Производство и поставки</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
@@ -497,7 +520,10 @@
               </a>
             </li>
             <li class="cases__item">
-              <img class="cases__image" width="217" height="234" src="./img/retail-ecommerce-icon.png" alt="Ритейл и е-коммерс.">
+              <picture>
+                <source type="image/webp" srcset="./img/retail-ecommerce-icon.webp 1x, ./img/retail-ecommerce-icon@2x.webp 2x">
+                <img class="cases__image" width="217" height="234" src="./img/retail-ecommerce-icon.png" srcset="./img/retail-ecommerce-icon@2x.png" alt="Ритейл и е-коммерс.">
+              </picture>
               <p class="cases__title">Ритейл и е-коммерс</p>
               <a class="cases__link" href="#">
                 Смотреть примеры
@@ -515,7 +541,10 @@
     <section class="about about--black">
       <h2 class="visually-hidden">Кейсы</h2>
       <div class="about__container container">
-        <img class="about__title" src="./img/about-cases-slider-title.svg" alt="Изображение заголовка раздела со слайдером - Кейсы.">
+        <picture>
+          <source media="(max-width: 520px)" srcset="./img/about-cases-slider-title-mobile.svg" width="66" height="240">
+          <img class="about__title" src="./img/about-cases-slider-title.svg" width="100" height="474" alt="Изображение заголовка раздела со слайдером - Кейсы.">
+        </picture>
         <div class="about__info about-info">
           <div class="about-info__control control">
             <button class="control__button" type="button">
@@ -532,8 +561,8 @@
               </svg>
             </button>
           </div>
-          <p class="about-info__title">LIVS</p>
-          <p class="about-info__description">Продукция LIVS™ представлена на многих рынках мира, в том числе в Европе, США, Южной Америке. В 2021 году LIVS™ начал свою работу в России и странах СНГ</p>
+          <p class="about-info__title about-info__title--slider">LIVS</p>
+          <p class="about-info__description about-info__description--slider">Продукция LIVS™ представлена на многих рынках мира, в том числе в Европе, США, Южной Америке. В 2021 году LIVS™ начал свою работу в России и странах СНГ</p>
           <ol class="about-info__list">
             <li class="about-info__item">Аналитика</li>
             <li class="about-info__item">Проектирование</li>
@@ -646,7 +675,10 @@
       </div>
       <h2 class="visually-hidden">Отзывы</h2>
       <div class="about__container container">
-        <img class="about__title" src="./img/about-review-title.svg" alt="Изображение заголовка раздела - Отзывы.">
+        <picture>
+          <source media="(max-width: 520px)" srcset="./img/about-review-title-mobile.svg" width="66" height="240">
+          <img class="about__title" src="./img/about-review-title.svg" width="100" height="474" alt="Изображение заголовка раздела - Отзывы.">
+        </picture>
         <div class="about__info about-info">
           <p class="about-info__title">Довольные клиенты -&nbsp;наш приоритет.</p>
           <p class="about-info__description">Мы ценим каждого клиента и благодарственные письма для нас являются  - лучшим вознаграждением!</p>
@@ -664,13 +696,22 @@
         <div class="about__thanks thanks">
           <ul class="thanks__list list">
             <li class="thanks__item">
-              <img class="thanks__image" width="396" height="512" src="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+              <picture>
+                <source media="(max-width: 520px)" srcset="./img/thanks-image-mobile.jpg" width="272" height="352">
+                <img class="thanks__image" src="./img/thanks-image.jpg" width="396" height="512" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+              </picture>
             </li>
             <li class="thanks__item">
-              <img class="thanks__image" width="396" height="512" src="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+              <picture>
+                <source media="(max-width: 520px)" srcset="./img/thanks-image-mobile.jpg" width="272" height="352">
+                <img class="thanks__image" src="./img/thanks-image.jpg" width="396" height="512" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+              </picture>
             </li>
             <li class="thanks__item">
-              <img class="thanks__image" width="396" height="512" src="./img/thanks-image.jpg" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+              <picture>
+                <source media="(max-width: 520px)" srcset="./img/thanks-image-mobile.jpg" width="272" height="352">
+                <img class="thanks__image" src="./img/thanks-image.jpg" width="396" height="512" alt="Справка-отзыв от ЛУКОЙЛ-Коми.">
+              </picture>
             </li>            
           </ul>
         </div>
@@ -680,14 +721,17 @@
     <!-- About Request Section -->
     <section class="about about--black">
       <div class="section-borders">
-        <div class="section-borders__line section-borders__line--one"></div>
-        <div class="section-borders__line section-borders__line--two"></div>
-        <div class="section-borders__line section-borders__line--three"></div>
+        <div class="section-borders__line section-borders__line--black section-borders__line--one"></div>
+        <div class="section-borders__line section-borders__line--black section-borders__line--two"></div>
+        <div class="section-borders__line section-borders__line--black section-borders__line--three"></div>
       </div>
       <h2 class="visually-hidden">Заявка</h2>
-      <div class="about__container container">
-        <img class="about__title" src="./img/about-request-title.svg" alt="Изображение заголовка раздела - Заявка.">
-        <div class="about__info about-info">
+      <div class="about__container about__container--request container">
+        <picture>
+          <source media="(max-width: 520px)" srcset="./img/about-request-title-mobile.svg" width="66" height="240">
+          <img class="about__title" src="./img/about-request-title.svg" width="100" height="474" alt="Изображение заголовка раздела - Заявка.">
+        </picture>
+        <div class="about__info about-info about-info--request">
           <p class="about-info__title about-info__title--request">Обсудить стратегию решения задач по Вашему проекту</p>
           <a class="about-info__request-link" href="#">
             Скачать бриф
@@ -723,20 +767,20 @@
               <p class="form__legend">О проекте</p>
               <ul class="form__list form__list--radio list">
                 <li class="radio">
+                  <input class="radio__input" type="radio" name="about" id="complex" value="complex" checked>
                   <label class="radio__label" for="complex">Комплексный</label>
-                  <input class="radio__input" type="radio" name="about" id="complex" value="complex">
                 </li>
                 <li class="radio">
-                  <label class="radio__label" for="brand">Брендинг</label>
                   <input class="radio__input" type="radio" name="about" id="brand" value="brand">
+                  <label class="radio__label" for="brand">Брендинг</label>
                 </li>
                 <li class="radio">
-                  <label class="radio__label" for="web">Веб</label>
                   <input class="radio__input" type="radio" name="about" id="web" value="web">
+                  <label class="radio__label" for="web">Веб</label>
                 </li>
                 <li class="radio">
-                  <label class="radio__label" for="promotion">Продвижение</label>
                   <input class="radio__input" type="radio" name="about" id="promotion" value="promotion">
+                  <label class="radio__label" for="promotion">Продвижение</label>
                 </li>
               </ul>
             </fieldset>
@@ -792,6 +836,10 @@
 
   <!-- Footer -->
   <footer class="footer">
+    <div class="section-borders">
+      <div class="section-borders__line section-borders__line--black section-borders__line--one"></div>
+      <div class="section-borders__line section-borders__line--black section-borders__line--three"></div>
+    </div>
     <div class="footer__container container">
       <div class="footer__links-wrapper">
         <div class="footer__links footer-links">
@@ -892,8 +940,10 @@
           <a class="footer-links__link footer-links__link--page" href="#">Отзывы</a>      
         </div>
       </div>
+    </div>
+    <div class="footer__copyright-wrapper">
       <div class="footer__copyright copyright">
-        <p class="copyright__text">Все права защищены</p><a class="copyright__personal-data" href="#">Политика конфиденциальности</a>
+        <p class="copyright__text">Все права защищены</p> <span class="copyright__divider">|</span> <a class="copyright__personal-data" href="#">Политика конфиденциальности</a>
       </div>
     </div>
   </footer>

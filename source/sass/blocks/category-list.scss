@@ -1,13 +1,29 @@
 .category-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 45px;
+  gap: 35px;
   padding: 0;
 }
 
 .category-list__item {
-  height: 28px;
-  border-bottom: 1px solid $link-orange-color;
+  position: relative;
+  font-size: 26px;
+  line-height: 192%;
+  // border-bottom: 1px solid $link-orange-color;
+
+  @media (max-width: $mobile-width) {    
+    font-size: 22px;
+    line-height: 205%;
+  }
+
+  &::after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    content: "";
+    width: 80%;
+    border: 1px solid $orange-color;
+  }
 }
 
 .category-list__link {

@@ -43,18 +43,25 @@
   height: 100%;
   width: 1px;
   background-color: $border-gray-color;
-  z-index: -5;
 
   &--one {
-    left: 20.3%;
+    left: 20%;
   }
 
   &--two {
-    left: 58.1%;
+    left: 58%;
   }
 
   &--three {
-    left: 83.2%;
+    left: 83%;
+  }
+
+  &--black {
+    background-color: $border-gray-color-second;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
   }
 }
 

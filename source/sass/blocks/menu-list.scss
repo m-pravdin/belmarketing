@@ -5,18 +5,24 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 44px;
+  gap: 45px;
 }
 
 .menu-list__link {
   display: block;
-  max-width: 280px;
+  font-size: 36px;
   margin: 0 auto;
   text-align: center;
   font-weight: 300;
+  line-height: 100%;
   color: $dark-color;
-  line-height: 150%;
   text-decoration: none;
+  
+  @media (max-width: $mobile-width) {
+    max-width: 280px;
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
 
 .menu-list__phone {
@@ -24,8 +30,14 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 252px;
+  font-size: 36px;
   font-weight: 700;
   text-decoration: none;
   color: $dark-color;
+
+  @media (max-width: $mobile-width) {    
+    max-width: 252px;
+    font-size: 20px;
+    line-height: 150%;
+  }
 }

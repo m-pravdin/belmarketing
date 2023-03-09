@@ -1,19 +1,42 @@
 .copyright {
   display: flex;
+  max-width: 1150px;
+  margin: 0 auto;
   padding: 20px 0;
+
+  @media (max-width: $mobile-width) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px 20px 20px;
+  }
 }
 
 .copyright__text {
   margin: 0;
-  margin-right: 15px;
-  padding-right: 10px;
+  margin-right: 10px;
   font-weight: 300;
   font-size: 14px;
   line-height: 357%;
   color: $copyright-color;
+
+  @media (max-width: $mobile-width) {
+    line-height: 0;
+  }
+}
+
+.copyright__divider {
+  align-self: center;
+  font-weight: 300;
+  color: $copyright-color;
+  margin-right: 10px;
+
+  @media (max-width: $mobile-width) {
+    line-height: 0;
+  }
 }
 
 .copyright__personal-data {
+  white-space: pre-wrap;
   font-weight: 300;
   font-size: 14px;
   line-height: 357%;

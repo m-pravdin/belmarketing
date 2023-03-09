@@ -3,6 +3,12 @@
   align-items: center;
   gap: 37px;
   padding-left: 40px;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
 }
 
 .more__text {

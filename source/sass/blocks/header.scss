@@ -4,4 +4,10 @@
   padding-bottom: 23px;
   min-height: 140px;
   background: $dark-color;
+
+
+  
+  @media (max-width: $tablet-width) {
+    min-height: 70px;
+  }
 }

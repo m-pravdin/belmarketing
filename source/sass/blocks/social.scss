@@ -9,6 +9,10 @@
   &--footer {
     justify-content: flex-start;
   }
+  
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .social__link {

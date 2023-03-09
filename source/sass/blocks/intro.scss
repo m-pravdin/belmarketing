@@ -6,11 +6,15 @@
   background-image: url("data:image/svg+xml,%3Csvg width='1050' height='1050' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='525' cy='525' r='250.5' stroke='%23fff' stroke-opacity='.1'/%3E%3Ccircle cx='525' cy='525' r='165.5' stroke='%23fff' stroke-opacity='.1'/%3E%3Ccircle cx='525' cy='525' r='83.5' stroke='%23fff' stroke-opacity='.1'/%3E%3Ccircle cx='525' cy='525' r='339.5' stroke='%23fff' stroke-opacity='.1'/%3E%3Ccircle cx='525' cy='525' r='431.5' stroke='%23fff' stroke-opacity='.1'/%3E%3Ccircle cx='525' cy='525' r='524.5' stroke='%23fff' stroke-opacity='.1'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .intro__container {
   display: grid;
-  grid-template-columns: minmax(50px, 100px) minmax(350px, 625px) minmax(350px, 640px);
+  grid-template-columns: minmax(50px, 100px) minmax(350px, 625px) minmax(350px, 800px);
   align-items: center;
 
   @media (max-width: $tablet-width) {
@@ -19,21 +23,18 @@
 }
 
 .intro__logo-wrapper {
-  margin: auto;
-
-  @media (max-width: $mobile-width) {    
-    text-align: center;
-    width: 100%;
-    height: 554px;
-    background-image: url("data:image/svg+xml,%3Csvg width='532' height='532' viewBox='0 0 532 532' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='195' cy='266' r='126.5' stroke='white' stroke-opacity='0.1'/%3E%3Ccircle cx='195' cy='266' r='83.5' stroke='white' stroke-opacity='0.1'/%3E%3Ccircle cx='195' cy='266' r='42.5' stroke='white' stroke-opacity='0.1'/%3E%3Ccircle cx='195' cy='266' r='171.5' stroke='white' stroke-opacity='0.1'/%3E%3Ccircle cx='195' cy='266' r='218.5' stroke='white' stroke-opacity='0.1'/%3E%3Ccircle cx='195' cy='266' r='265.5' stroke='white' stroke-opacity='0.1'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
+  @media (max-width: $mobile-width) {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
   }
+}
+
+.intro__logo {
+  object-fit: contain;
 }
 
 .intro__social {
   transform: rotate(-90deg);
-  
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
 }

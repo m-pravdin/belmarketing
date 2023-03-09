@@ -1,0 +1,10 @@
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $mobile-width) {
+    grid-column: 2 / 3;
+    padding-left: 40px;
+  }
+}

@@ -1,6 +1,11 @@
 .footer-links {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width) {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .footer-links__title {
@@ -30,6 +35,10 @@
     line-height: 188%;
     color: $white-color;
     margin-bottom: 5px;
+
+    @media (max-width: $mobile-width) {
+      margin-top: 15px;
+    }
   }
 }
 

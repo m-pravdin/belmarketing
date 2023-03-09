@@ -3,4 +3,22 @@
   font-weight: 400;
   line-height: 133%;
   color: $white-color;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.radio__input {
+  display: none;
+
+  &:checked + label {
+    position: relative;
+    cursor: pointer;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 80%;
+      border: 1px solid $orange-color;
+    }
+  }
 }

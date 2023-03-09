@@ -3,6 +3,10 @@
   flex-direction: column;
   gap: 65px;
   padding-left: 40px;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .percent-list__item {

@@ -1,5 +1,19 @@
 .advantages {
   position: relative;
+  background-image: url("data:image/svg+xml,%3Csvg width='584' height='584' viewBox='0 0 584 584' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='292' cy='292' r='192.5' stroke='%23FF9B46'/%3E%3Ccircle cx='292' cy='292' r='97.5' stroke='%23FF9B46'/%3E%3Ccircle cx='292' cy='292' r='291.5' stroke='%23FF9B46'/%3E%3Ccircle cx='291.5' cy='98.5' r='8' fill='none' stroke='%23FF9B46'/%3E%3Ccircle cx='389.5' cy='291.5' r='8' fill='none' stroke='%23FF9B46'/%3E%3Ccircle cx='101.5' cy='514.5' r='8' fill='none' stroke='%23FF9B46'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+
+  @media (max-width: $mobile-width) {
+    min-height: 440px;
+  }
+}
+
+.advantages__item {
+  @media (max-width: $mobile-width) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 112%;
+  }
 }
 
 .advantages__text {  
@@ -9,6 +23,10 @@
   line-height: 120%;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px $dark-color;
+
+  @media (max-width: $mobile-width) {
+    font-size: 45px;
+  }
 }
 
 .advantages__arrow {
