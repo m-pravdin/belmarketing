@@ -7,9 +7,11 @@
 
 .category-list__item {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   font-size: 26px;
   line-height: 192%;
-  // border-bottom: 1px solid $link-orange-color;
 
   @media (max-width: $mobile-width) {    
     font-size: 22px;

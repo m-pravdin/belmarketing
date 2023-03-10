@@ -1,9 +1,9 @@
 .cases {
   padding-top: 120px;
-  background-image: url("data:image/svg+xml,%3Csvg width='584' height='584' viewBox='0 0 584 584' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='292' cy='292' r='291.5' stroke='%23ECECEC'/%3E%3Ccircle cx='292' cy='292' r='192.5' stroke='%23ECECEC'/%3E%3Ccircle cx='292' cy='292' r='97.5' stroke='%23ECECEC'/%3E%3C/svg%3E%0A");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-attachment: fixed;
+  // background-image: url("data:image/svg+xml,%3Csvg width='584' height='584' viewBox='0 0 584 584' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='292' cy='292' r='291.5' stroke='%23ECECEC'/%3E%3Ccircle cx='292' cy='292' r='192.5' stroke='%23ECECEC'/%3E%3Ccircle cx='292' cy='292' r='97.5' stroke='%23ECECEC'/%3E%3C/svg%3E%0A");
+  // background-repeat: no-repeat;
+  // background-position: top;
+  // background-attachment: fixed;
 
   @media (max-width: $mobile-width) {
     grid-column: 1 / 3;
