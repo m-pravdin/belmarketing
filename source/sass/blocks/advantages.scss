@@ -9,14 +9,51 @@
 }
 
 .advantages__item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
   @media (max-width: $mobile-width) {
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 112%;
+    gap: 7px;
+  }
+
+  &--clients {
+    left: 32%;
+    top: -1%;
+
+    @media (max-width: $mobile-width) {
+      left: 25%;
+      top: -18%;
+    }
+  }
+
+  &--projects {
+    left: 47%;
+    top: 38%;
+
+    @media (max-width: $mobile-width) {
+      left: 38%;
+      top: 6%;
+    }
+  }
+
+  &--years {
+    left: -8%;
+    top: 81%;
+
+    @media (max-width: $mobile-width) {
+      left: 1%;
+      top: 37%;
+    }
   }
 }
 
-.advantages__text {  
+.advantages__number {  
+  margin: 0;
   font-family: $font-second;
   font-size: 75px;
   font-weight: 900;
@@ -27,9 +64,60 @@
   @media (max-width: $mobile-width) {
     font-size: 45px;
   }
+
+  &--main-font {
+    padding-top: 5px;
+    font-family: $font-main;
+  }
+}
+
+.advantages__text {
+  max-width: 120px;
+  margin: 0;
+
+  @media (max-width: $mobile-width) {
+    max-width: 95px;
+  }
 }
 
 .advantages__arrow {
   position: absolute;
   fill: none;
+
+  &--one {
+    left: 60%;
+    top: 65%;
+
+    @media (max-width: $mobile-width) {
+      width: 48px;
+      height: 56px;
+      left: 56%;
+      top: 25%;
+    }
+  }
+
+  &--two {
+    left: -25%;
+    bottom: -18%;
+
+    @media (max-width: $mobile-width) {
+      width: 51px;
+      height: 54px;
+      left: 1%;
+      top: 57%;
+      rotate: -8deg;
+    }
+  }
+
+  &--three {
+    left: 80%;
+    bottom: -43%;
+
+    @media (max-width: $mobile-width) {
+      width: 37px;
+      height: 66px;
+      left: 80%;
+      bottom: -6%;
+    }
+  }
 }

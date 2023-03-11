@@ -19,14 +19,39 @@
   font-size: 55px;
   line-height: 118%;
   color: $white-color;
-  
-  span {
-    color: $orange-color;
-  }
 
   @media (max-width: $mobile-width) {
     font-size: 38px;
     line-height: 105%;
+  }
+}
+
+.offer__title-span {
+  display: inline-flex;
+  color: $orange-color;
+  border-right: 6px solid $orange-color;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 4s steps(14,end) 1s 1 normal both, animated-cursor 600ms steps(14,end) infinite;
+}
+
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 360px;
+  }
+}
+
+@keyframes animated-cursor {
+  from {
+    border-right-color: $orange-color;
+  }
+
+  to {
+    border-right-color: transparent;
   }
 }
 
