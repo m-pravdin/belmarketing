@@ -41,7 +41,7 @@
 
 .about__container {
   display: grid;
-  grid-template-columns: minmax(50px, 110px) minmax(420px, 750px) minmax(420px, 475px);
+  grid-template-columns: minmax(50px, 120px) minmax(420px, 732px) minmax(420px, 475px);
   max-width: 1550px;
   padding-left: 80px;
   padding-right: 130px;
@@ -66,6 +66,7 @@
 .about__title {
   grid-column: 1 / 2;
   align-self: flex-start;
+  float: right;
   margin: 0;
   position: sticky;
   top: 25px;

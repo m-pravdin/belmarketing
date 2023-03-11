@@ -42,16 +42,11 @@
   color: $textarea-text-color;
 }
 
-.file-label {
-  font-size: 16px;
-  line-height: 150%;
-  color: $orange-color;
-}
-
 .form__button {
   width: 253px;
   height: 58px;
   padding: 0 37px 0 28px;
+  margin-bottom: 22px;
   position: relative;
   display: flex;
   align-items: center;

@@ -1,0 +1,22 @@
+.file {
+  margin: 15px 0;
+}
+
+.file__label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 150%;
+  color: $orange-color;
+  cursor: pointer;
+}
+
+.file__input {
+  position: absolute;
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}

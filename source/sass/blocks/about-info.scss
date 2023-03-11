@@ -14,10 +14,11 @@
 
   &--request {
     position: relative;
+    padding-left: 40px;
     height: 700px;
     background-image: url("../img/request-info-background.svg");
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: 40px;
     background-size: 404px 707px;
 
     @media (max-width: $mobile-width) {
