@@ -32,7 +32,7 @@
   border-right: 6px solid $orange-color;
   white-space: nowrap;
   overflow: hidden;
-  animation: animated-text 4s steps(14,end) 1s 1 normal both, animated-cursor 600ms steps(14,end) infinite;
+  animation: animated-text 2s steps(30,end) 1s 1 normal both, animated-cursor 600ms steps(30,end) infinite;
 }
 
 @keyframes animated-text {

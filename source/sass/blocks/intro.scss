@@ -2,7 +2,7 @@
   background-color: $dark-color;
   min-height: 100vh;
   margin-top: -140px;
-  padding-top: 140px;
+  padding: 140px 0;
   background-image: url("data:image/svg+xml,%3Csvg width='1050' height='1050' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='525' cy='525' r='250.5' stroke='%23fff' stroke-opacity='.1'/%3E%3Ccircle cx='525' cy='525' r='165.5' stroke='%23fff' stroke-opacity='.1'/%3E%3Ccircle cx='525' cy='525' r='83.5' stroke='%23fff' stroke-opacity='.1'/%3E%3Ccircle cx='525' cy='525' r='339.5' stroke='%23fff' stroke-opacity='.1'/%3E%3Ccircle cx='525' cy='525' r='431.5' stroke='%23fff' stroke-opacity='.1'/%3E%3Ccircle cx='525' cy='525' r='524.5' stroke='%23fff' stroke-opacity='.1'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
@@ -29,11 +29,6 @@
     align-items: center;
     padding-top: 40px;
   }
-}
-
-.intro__logo {
-  object-fit: contain;
-  width: 100%;
 }
 
 .intro__social {

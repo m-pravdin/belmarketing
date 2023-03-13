@@ -20,11 +20,22 @@
   display: flex;
   flex-direction: column;
   gap: 67px;
+
+  @media (max-width: $mobile-width) {
+    gap: 36px;
+  }
 }
 
 .thanks__image {
   &--active {
     border: 1px solid $orange-color;
+    transform: scale(121%);
+    margin: 50px 0;
+
+    @media (max-width: $mobile-width) {
+      transform: none;
+      margin: 0;
+    }
   }
 }
 

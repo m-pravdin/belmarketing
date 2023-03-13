@@ -5,9 +5,7 @@
 .partners__row {
   display: flex;
   align-items: center;
-  padding: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   list-style-type: none;
   gap: 50px;
   max-height: 109px;
@@ -19,6 +17,52 @@
     padding-top: 0;
     padding-bottom: 20px;
     border-bottom: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0;
+    padding-bottom: 10px;
+
+    &--second {
+      padding-top: 15px;
+      padding-bottom: 17px;
+    }
+  }
+}
+
+.partners__image {
+  object-fit: contain;
+
+  @media (max-width: $mobile-width) {
+    &--yandex {
+      width: 74px;
+      height: 21px;
+    }
+
+    &--psb {
+      width: 105px;
+      height: 20px;
+    }
+
+    &--gazprom {
+      width: 133px;
+      height: 27px;
+    }
+
+    &--sber {
+      width: 82px;
+      height: 23px;
+    }
+
+    &--rostelekom {
+      width: 120px;
+      height: 31px;
+    }
+
+    &--nornikel {
+      width: 125px;
+      height: 34px;
+    }
   }
 }
 
