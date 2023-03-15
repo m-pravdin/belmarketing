@@ -18,6 +18,14 @@
   display: flex;
   gap: 5px;
   align-items: center;
+
+  &:hover {
+    color: $orange-color;
+
+    .request__link-image {
+      stroke: $orange-color;
+    }
+  }
 }
 
 @keyframes request__row {
@@ -28,4 +36,8 @@
   to {
     margin-right: 40%;
   }
+}
+
+.request__link-image {
+  stroke: $dark-color;
 }

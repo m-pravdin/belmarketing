@@ -40,6 +40,10 @@
       margin-top: 15px;
     }
   }
+
+  &:hover {
+    color: $orange-color;
+  }
 }
 
 .footer-links__social {

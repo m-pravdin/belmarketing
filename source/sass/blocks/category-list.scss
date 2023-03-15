@@ -31,4 +31,8 @@
 .category-list__link {
   color: $white-color;
   text-decoration: none;
+
+  &:hover {
+    color: $orange-color;
+  }
 }

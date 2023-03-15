@@ -49,10 +49,19 @@
   gap: 8px;
   font-size: 16px;
   line-height: 150%;
-  color: $link-orange-color;
+  color: $orange-color;
   text-decoration: none;
+
+  &:hover {
+    color: $link-orange-color;
+
+    .cases__link-image {
+      stroke: $link-orange-color;
+    }
+  }
 }
 
 .cases__link-image {
   fill: none;
+  stroke: $orange-color;
 }

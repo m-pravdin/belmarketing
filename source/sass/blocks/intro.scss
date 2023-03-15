@@ -23,6 +23,13 @@
 }
 
 .intro__logo-wrapper {
+  width: auto;
+  height: 100%;
+  background-image: url("../img/logo-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-position: 100px 0;
+
+
   @media (max-width: $mobile-width) {
     height: 100px;
     display: flex;

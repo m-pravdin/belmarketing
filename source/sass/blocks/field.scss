@@ -17,4 +17,12 @@
   font-size: 16px;
   font-weight: 300;
   color: $textarea-text-color;
+
+  &:hover {
+    border: 2px solid $link-orange-color;
+  }
+
+  &:focus {
+    border: 2px solid $orange-color;
+  }
 }

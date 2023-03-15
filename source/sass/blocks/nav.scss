@@ -57,15 +57,19 @@
   }
 }
 
-.nav__phone {
-  display: flex;
-  align-items: center;
-  margin-right: 22px;
-  color: $light-gray-color;
-  text-decoration: none;
-  white-space: nowrap;
-}
-
 .nav__button {
   margin-left: 22px;
+  cursor: pointer;
+
+  &:hover {
+    color: $orange-color;
+
+    .toggle__button {
+      fill: $orange-color;
+    }
+
+    .toggle__text {
+      color: $orange-color;
+    }
+  }
 }

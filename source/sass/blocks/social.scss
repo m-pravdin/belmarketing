@@ -24,6 +24,10 @@
   &--footer {
     color: $gray-color;
   }
+
+  &:hover {
+    color: $orange-color;
+  }
 }
 
 .social__text {

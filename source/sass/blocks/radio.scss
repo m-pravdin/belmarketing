@@ -5,6 +5,10 @@
   color: $white-color;
   padding-bottom: 10px;
   cursor: pointer;
+
+  &:hover {
+    color: $orange-color;
+  }
 }
 
 .radio__input {

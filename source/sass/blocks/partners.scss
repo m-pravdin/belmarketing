@@ -64,6 +64,10 @@
       height: 34px;
     }
   }
+
+  &:hover {
+    fill: $orange-color;
+  }
 }
 
 @keyframes partners__row {

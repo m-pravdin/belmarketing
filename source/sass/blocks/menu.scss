@@ -12,3 +12,24 @@
     height: 70px;
   }
 }
+
+.menu__phone {
+  display: flex;
+  align-items: center;
+  margin-right: 22px;
+  color: $light-gray-color;
+  text-decoration: none;
+  white-space: nowrap;
+
+  &:hover {
+    color: $orange-color;
+
+    .menu__image {
+      fill: $orange-color;
+    }
+  }
+}
+
+.menu__image {
+  fill: $white-color;
+}

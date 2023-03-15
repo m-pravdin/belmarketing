@@ -125,8 +125,9 @@
   color: $white-color;
 }
 
-.about-info__request-link {
+.about-info__link {
   display: flex;
+  align-items: center;
   gap: 10px;
   padding-left: 71px;
   text-decoration: none;
@@ -136,4 +137,16 @@
     font-size: 16px;
     padding-left: 51px;
   }
+
+  &:hover {
+    color: $link-orange-color;
+
+    .about-info__link-image {
+      stroke: $link-orange-color;
+    }
+  }
+}
+
+.about-info__link-image {
+  stroke: $orange-color;
 }

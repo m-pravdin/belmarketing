@@ -50,8 +50,17 @@
     font-size: 16px;
     line-height: 150%;
   }
+
+  &:hover {
+    color: $link-orange-color;
+
+    .thanks__link-image {
+      stroke: $link-orange-color;
+    }
+  }
 }
 
 .thanks__link-image {
   fill: none;
+  stroke: $orange-color;
 }

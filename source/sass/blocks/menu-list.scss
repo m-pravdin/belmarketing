@@ -23,6 +23,10 @@
     font-size: 20px;
     line-height: 150%;
   }
+
+  &:hover {
+    color: $orange-color;
+  }
 }
 
 .menu-list__phone {
@@ -39,6 +43,14 @@
     max-width: 252px;
     font-size: 20px;
     line-height: 150%;
+  }
+
+  &:hover {
+    color: $orange-color;
+
+    .menu-list__image {
+      fill: $orange-color;
+    }
   }
 }
 

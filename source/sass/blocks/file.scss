@@ -10,6 +10,18 @@
   line-height: 150%;
   color: $orange-color;
   cursor: pointer;
+
+  &:hover {
+    color: $link-orange-color;
+
+    .file__label-image {
+      stroke: $link-orange-color;
+    }
+  }
+}
+
+.file__label-image {
+  stroke: $orange-color;
 }
 
 .file__input {

@@ -92,5 +92,26 @@
     margin-top: 14px;
     position: relative;
   }
+
+  &:hover {
+    color: $orange-color;
+
+    .tooltip__image {
+      fill: $orange-color;
+
+      &--social {
+        fill: none;
+        color: $orange-color;
+      }
+    }
+  }
+}
+
+.tooltip__image {
+  fill: $tooltip-gray-color;
+
+  &--social {
+    fill: none;
+  }
 }
   

@@ -4,6 +4,7 @@
 
 .offer__text {
   margin: 0;
+  margin-top: 76px;
   margin-bottom: 33px;
   color: $gray-color;
   font-weight: 300;
@@ -15,7 +16,7 @@
 
 .offer__title {
   margin: 0;
-  margin-bottom: 52px;
+  margin-bottom: 120px;
   font-size: 55px;
   line-height: 118%;
   color: $white-color;
@@ -57,7 +58,7 @@
 
 .offer__list {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 93px;
   max-width: 490px;
 }
 
@@ -74,6 +75,18 @@
     width: 250px;
     height: 48px;
     padding: 0 30px 0 20px;
+  }
+
+  &:hover {
+    transform: scale(110%);
+
+    .offer__button-img {
+      transform: scale(90%);
+    }
+
+    .intro__logo-wrapper {
+      background-image: url("../img/logo-intro-desktop-active.png");
+    }
   }
 }
 

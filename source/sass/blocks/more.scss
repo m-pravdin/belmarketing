@@ -25,4 +25,17 @@
   line-height: 188%;
   color: $orange-color;
   text-decoration: none;
+
+  &:hover {
+    color: $link-orange-color;
+
+    .more__link-image {
+      stroke: $link-orange-color;
+    }
+  }
+}
+
+.more__link-image {
+  fill: none;
+  stroke: $orange-color;
 }
